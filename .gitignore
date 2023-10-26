@@ -1,5 +1,6 @@
-## Mac auto generated files:
-**/.DS_Store
+## Ignore system generated files
+.DS_Store
+Thumbs.db
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
