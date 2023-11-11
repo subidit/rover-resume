@@ -33,7 +33,7 @@ The **Rover Resume** template is a LaTeX-based document that provides a clean an
 
 ## Contact
 
-For inquiries or support, use the discussion tab.
+For inquiries or support, use the [Discussions](https://github.com/subidit/rover-resume/discussions) tab.
 
 Feel free to contribute to the project or provide feedback by opening an issue or submitting a pull request.
 
