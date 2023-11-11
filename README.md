@@ -1,5 +1,50 @@
-# rover-resume
-Simple résumé template with customisable components. 
+# Rover Resume Template
+
+## Overview
+
+The **Rover Resume** template is a LaTeX-based document that provides a clean and organized format for creating a professional resume. This template is designed with simplicity and typographic design principles in mind. It uses basic LaTeX commands and popular packages- keeping it very easy to follow and customise while retaining its visual appeal. 
+
+## Sample Output
+
+[![Sample Resume Output](rover-template.png)](https://github.com/subidit/rover-resume/blob/main/rover-template.tex)
+
+*Sample Resume Output.*
+
+## Features
+
+- Clean and professional design.
+- Easy-to-use LaTeX template.
+- Organized sections for Education, Experience, Certifications, Projects, and Skills.
+- Utilizes modern fonts for improved readability.
+- Customizable headers for personal information.
+
+## Usage
+
+1. Clone or download the Rover Resume template.
+2. Copy the [template](https://github.com/subidit/rover-resume/blob/main/rover-template.tex) to a new Overleaf project. Or Open the [LaTeX template file](https://github.com/subidit/rover-resume/blob/main/rover-template.tex) in your preferred editor.
+3. Fill in your personal information, including name, contact details, and links to LinkedIn and GitHub.
+4. Populate the sections for Education, Experience, Certifications & Awards, and Skills & Interests with your relevant information.
+5. Customize the formatting, such as fonts and spacing, to match your preferences.
+
+## Customization
+
+- Adjust fonts, spacing, and formatting according to your preferences.
+- Personalize section headers and sub-headers to better suit your resume content.
+
+## Contact
+
+For inquiries or support, use the discussion tab.
+
+Feel free to contribute to the project or provide feedback by opening an issue or submitting a pull request.
+
+Happy job hunting!
+
+## License
+[CC0 1.0 Universal](https://github.com/subidit/rover-resume/blob/main/LICENSE)
+<!-- 
+Simple résumé template which uses basic LaTeX with explainer comments. 
+
+[![Sample Resume Output](rover-template.png)](https://github.com/subidit/rover-resume/blob/main/rover-template.tex)
 
 
 **Options for the `enumitem` Package:**
