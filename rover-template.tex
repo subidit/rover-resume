@@ -1,0 +1,90 @@
+\documentclass[11pt]{article} % fontsize 10pt/11pt/12pt
+
+\usepackage[margin=1in]{geometry}
+\pagestyle{empty} % remove page number
+
+\usepackage{mlmodern} % use lmodern for lighter font
+
+\setcounter{secnumdepth}{0} % remove section numbering
+
+\usepackage{enumitem} % formatting list style
+  \setlist[itemize]{noitemsep, left=0pt..1.5em}
+  \setlist[description]{itemsep=0pt}
+
+\usepackage{titlesec} 
+% \titlespacing{⟨command ⟩}{⟨left ⟩}{⟨before-sep ⟩}{⟨after-sep ⟩}[⟨right-sep ⟩]
+  % \titlespacing{\section}{0pt}{3ex}{1ex} 
+  \titlespacing{\subsection}{0pt}{*0}{*0}
+  \titlespacing{\subsubsection}{0pt}{*0}{*0}
+% \titleformat{⟨command ⟩}[⟨shape ⟩]{⟨format ⟩}{⟨label ⟩}{⟨sep ⟩}{⟨before-code ⟩}[⟨after-code ⟩]
+  \titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule]
+
+
+\begin{document}
+
+\begin{center}
+  \begin{minipage}{0.5\textwidth}
+    {\Huge\bfseries
+      BASE ROVER % Name Here
+      } \\ \medskip 
+    Resume Template % Title [optional]
+  \end{minipage} \hfill
+  \begin{minipage}{0.4\textwidth}
+    \raggedleft
+    Email: base@rover.com \\
+    Mobile: 123 456 7890 \\
+    LinkedIn: linkedin.com/username \\
+    GitHub: github.com/username
+  \end{minipage}
+\end{center}
+
+\section{Education}
+%=================%
+% \vspace{-1.5ex}
+\subsection{University of Post Graduation \hfill City, State}
+\subsubsection{Degree Name \hfill Year}
+\begin{itemize}
+    \item Cumulative GPA: 3.98
+    \item Related Coursework: real-estate financing, criminal procedure, corporations
+    \item Rover Resume Award
+\end{itemize}
+
+\section{Experience}
+%=================%
+% \vspace{-1.5ex}
+\subsection{Company ABC \hfill City, State (or Remote)}
+\subsubsection{Position Title \hfill  Month Year - Month Year}
+\begin{itemize}
+    \item Beginning with your most recent position, describe your experience, skills, and resulting outcomes in bullet or paragraph form.
+    \item Begin each line with an action verb and include details that will help the reader understand your accomplishments, skills, knowledge, abilities, or achievements.
+    \item Quantify where possible.
+    \item Do not use personal pronouns; each line should be a phrase rather than a full sentence.
+\end{itemize}
+
+\subsection{Company XYZ \hfill City, State}
+\subsubsection{Position Title \hfill Month Year - Month Year}
+\begin{itemize}
+    \item XYZ method - Accomplished [X] as measured by [Y], by doing [Z].
+    \item CAR method - Context, Action, Result. STAR method - Situation, Task, Action, Result.
+    \item Be consistent with headers and sub-headers. i.e. either keep Institute name and Location as primary header in all instances or use Designation and Duration as primary header in all.
+    \item Use the combination that would be most suitable for your situation. For eg. if worked in big/famous company then use that as primary heading, else if worked in big position in smaller company then use designation as primary heading.
+\end{itemize}
+
+\section{Certification \& Awards}
+%===============================%
+\begin{enumerate}[itemsep=0pt]
+  \item [2023] Some programming bootcamp, Location.
+  \item [2022] Forbes Top 15 Procrastinators under 15.
+  \item [2021] Conducted workshop on family planning by abstainance in SomePlace.
+\end{enumerate}
+
+\section{Skills \& Interests}
+%===========================%
+\begin{description}%[nosep]
+    \item[Technical] List computer software and programming languages 
+    \item[Language] List foreign languages and your level of fluency
+    \item[Laboratory] List scientific / research lab techniques or tools [If Applicable]
+    \item[Interests] List activities you enjoy that may spark interview conversation
+\end{description}
+
+\end{document}
