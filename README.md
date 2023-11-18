@@ -1,18 +1,14 @@
 # Rover Resume Template
-
-[![Sample Resume Output](rover-template.png)](https://github.com/subidit/rover-resume/blob/main/rover-template.tex)
-
 ## Overview
 
-The **Rover Resume** template is a LaTeX-based document that provides a clean and organized format for creating a professional resume. This template is designed with simplicity and typographic design principles in mind. It uses basic LaTeX commands and popular packages- keeping it very easy to follow and customise while retaining its visual appeal. 
+The **Rover Resume** template is designed with simplicity and design principles in mind. It uses basic LaTeX commands and popular packages- keeping it very easy to follow and customise while retaining visual appeal. 
+
+![Sample Resume Output](base-rover.png)
 
 ## Features
-
 - Clean and professional design.
-- Easy-to-use LaTeX template.
-- Organized sections for Education, Experience, Certifications, Projects, and Skills.
-- Utilizes modern fonts for improved readability.
-- Customizable headers for personal information.
+- Easy-to-follow LaTeX template.
+
 
 ## Usage
 
