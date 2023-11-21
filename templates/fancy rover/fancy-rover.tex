@@ -1,0 +1,132 @@
+\documentclass{article}
+
+\usepackage{geometry}
+\geometry{
+top=1in,
+bottom=1in,
+left=2.5cm,
+right=2.5cm
+}
+
+\setcounter{secnumdepth}{0}
+\pdfgentounicode=1
+
+\usepackage{enumitem}
+\setlist[itemize]{
+    noitemsep,
+    left=0pt..1.5em
+}
+\setlist[description]{itemsep=0pt}
+
+\usepackage{titlesec}
+\titlespacing{\subsection}{0pt}{*0}{*0}
+\titlespacing{\subsubsection}{0pt}{*0}{*0}
+\titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule \global\RemVStrue]
+\titleformat{\subsection}{\large\bfseries}{}{}{\rvs}
+\titleformat{\subsubsection}{\large\bfseries\itshape}{}{}{}
+% \titleformat{<command>}[<shape>]{<format>}{<label>}{<sec>}{<before-code>}[<after-code>]  
+% \titlespacing{command}{left spacing}{before spacing}{after spacing}[right]
+
+\newif\ifRemVS % remove vspace after titlerule sometimes
+\newcommand{\rvs}{
+    \ifRemVS
+        \vspace{-.5\baselineskip}
+    \fi
+    \global\RemVSfalse
+}
+
+% \usepackage[dvipsnames, svgnames, x11names]{xcolor}
+\usepackage{xcolor}
+\colorlet{icnclr}{gray}
+% \colorlet [⟨type⟩]{⟨name⟩}[⟨num model⟩]{⟨color ⟩}
+% \definecolor[⟨type⟩]{⟨name⟩}{⟨model-list⟩}{⟨spec-list⟩}
+
+\usepackage{fontawesome5}
+
+\usepackage[bookmarks=false]{hyperref} % [imp!]
+\hypersetup{
+    colorlinks=true,
+    pdftitle={My Resume},
+}
+
+\usepackage[page]{totalcount}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}	
+\fancyhf{}							
+\cfoot{\color{gray} Rover R\'esum\'e -- Page \thepage{} of \totalpages}
+
+
+\begin{document}
+
+%== HEADER ==%
+\begin{center}
+    {\Huge\bfseries FANCY ROVER} \\ \medskip
+    {\color{icnclr}\faEnvelope[regular]} \href{mailto:hi@example.com}{fancy@rover.com} $|$ 
+    {\color{icnclr}\faIcon{mobile-alt}} \href{tel:1234567890}{123 456 7890} $|$
+    {\color{icnclr}\faLinkedinIn} \href{https://www.linkedin.com/in/}{linkedin.com/in/fancy}
+\end{center}
+
+\section{Education}
+%==============
+\subsection{University of Location $|$ {\normalfont\textsc{PG Degree}} \hfill 2024}
+\begin{itemize}
+    \item Cumulative GPA: 3.98
+    \item Related Coursework: Intro to Programming with Python, Database Administration
+    \item Rover Resume Award
+\end{itemize}
+
+\subsection{University of Graduation \hfill City, State}
+\subsubsection{Degree Name \hfill Year}
+\begin{itemize}
+    \item GPA: 3.4 (Mention if good)
+    \item Related Coursework (list of relavent classes to the job)
+    \item Dean's Award (list any awards or achivements)
+\end{itemize}
+
+\section{Experience}
+%===================
+\subsection{Amazon \hfill Feb 2008 -- Present}
+\subsubsection{Prime Member \hfill City, State}
+\begin{itemize}
+    \item Increased order volume by 823\% over 7 years 
+    \item Researched diverse product catalog, spanning departments from Simplehuman bag liners to cat food. 
+    \item Regularly reported on product quality using review portal.
+\end{itemize}
+
+\subsection{Organization \hfill City, State}
+\subsubsection{Position Title \hfill Month Year – Month Year}
+\begin{itemize}
+    \item XYZ method - Accomplished [X] as measured by [Y], by doing [Z].
+    \item CAR method - Context, Action, Result. STAR method - Situation, Task, Action, Result.
+    \item Begin each line with an action verb and include details that will help the reader understand your accomplishments, skills, knowledge, abilities, or achievements.
+    \item Quantify where possible.
+\end{itemize}
+
+\section{Skills}
+%===============
+\begin{description}
+    \item[Technical] List computer software and programming languages 
+    \item[Language] List foreign languages and your level of fluency
+    \item[Laboratory] List scientific / research lab techniques or tools [If Applicable]
+    \item[Interests] List activities you enjoy that may spark interview conversation
+\end{description}
+
+\section{Projects}
+%=================
+\subsection{Project Name {\normalfont $|$ \href{http://github.com}{\textit{GitHub Link}}} \hfill 2022}
+\begin{itemize}
+    \item Tech used, Language, Frameworks etc.
+    \item Implemented ABC feature
+    \item Optimised XYZ by 50\%
+\end{itemize}
+
+\section{Certification \& Awards}
+%===============================
+\begin{enumerate}[itemsep=0pt]
+  \item [2023] Some programming bootcamp, Location.
+  \item [2022] Forbes Top 15 Procrastinators under 15.
+  \item [2021] Conducted workshop on family planning by abstainance in SomePlace.
+\end{enumerate}
+
+\end{document}
