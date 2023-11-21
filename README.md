@@ -3,7 +3,7 @@
 
 The **Rover Resume** template is designed with simplicity and design principles in mind. It uses basic LaTeX commands and popular packages- keeping it very easy to follow and customise while retaining visual appeal. 
 
-![Sample Resume Output](images/base-rover.png)
+![Sample Resume Output](/images/fancy-rover.jpg)
 
 ## Features
 - Clean and professional design.
