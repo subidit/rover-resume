@@ -1,7 +1,10 @@
 \documentclass{article}
 
+\usepackage[sfdefault, light]{roboto}
+
 \usepackage{geometry}
 \geometry{
+a4paper,
 top=1in,
 bottom=1in,
 left=2.5cm,
@@ -19,24 +22,28 @@ right=2.5cm
 \setlist[description]{itemsep=0pt}
 
 \usepackage{titlesec}
+% \titlespacing{command}{left spacing}{before spacing}{after spacing}[right]
+\titlespacing{\section}{0pt}{*3}{*1}
 \titlespacing{\subsection}{0pt}{*0}{*0}
 \titlespacing{\subsubsection}{0pt}{*0}{*0}
-\titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule \global\RemVStrue]
-\titleformat{\subsection}{\large\bfseries}{}{}{\rvs}
-\titleformat{\subsubsection}{\large\bfseries\itshape}{}{}{}
 % \titleformat{<command>}[<shape>]{<format>}{<label>}{<sec>}{<before-code>}[<after-code>]  
-% \titlespacing{command}{left spacing}{before spacing}{after spacing}[right]
+\titleformat{\section}{\color{Sepia}\large\bfseries\uppercase}{}{}{\ruleafter}[\global\RemVStrue]
+\titleformat{\subsection}{\large\fontseries{semibold}\selectfont}{}{}{\rvs}
+\titleformat{\subsubsection}{\large\fontseries{semibold}\selectfont\itshape}{}{}{}
 
-\newif\ifRemVS % remove vspace after titlerule sometimes
+\usepackage{xhfill} 
+\newcommand\ruleafter[1]{#1~\xrfill[.5ex]{.5pt}[lightgray]} % add rule after title in .5 x-height 
+
+\newif\ifRemVS % remove vspace 
 \newcommand{\rvs}{
     \ifRemVS
-        \vspace{-.5\baselineskip}
+        \vspace{-.5ex}
     \fi
     \global\RemVSfalse
 }
 
 % \usepackage[dvipsnames, svgnames, x11names]{xcolor}
-\usepackage{xcolor}
+\usepackage[dvipsnames]{xcolor}
 \colorlet{icnclr}{gray}
 % \colorlet [⟨type⟩]{⟨name⟩}[⟨num model⟩]{⟨color ⟩}
 % \definecolor[⟨type⟩]{⟨name⟩}{⟨model-list⟩}{⟨spec-list⟩}
@@ -44,8 +51,9 @@ right=2.5cm
 \usepackage{fontawesome5}
 
 \usepackage[bookmarks=false]{hyperref} % [imp!]
-\hypersetup{
+\hypersetup{ % https://en.wikibooks.org/wiki/LaTeX/Hyperlinks
     colorlinks=true,
+    urlcolor=Fuchsia,
     pdftitle={My Resume},
 }
 
@@ -61,7 +69,7 @@ right=2.5cm
 
 %== HEADER ==%
 \begin{center}
-    {\Huge\bfseries FANCY ROVER} \\ \medskip
+    {\fontsize{46}{36}\robotothin FANCY\robotoblack ROVER} \\ \medskip
     {\color{icnclr}\faEnvelope[regular]} \href{mailto:hi@example.com}{fancy@rover.com} $|$ 
     {\color{icnclr}\faIcon{mobile-alt}} \href{tel:1234567890}{123 456 7890} $|$
     {\color{icnclr}\faLinkedinIn} \href{https://www.linkedin.com/in/}{linkedin.com/in/fancy}
@@ -69,15 +77,15 @@ right=2.5cm
 
 \section{Education}
 %==============
-\subsection{University of Location $|$ {\normalfont\textsc{PG Degree}} \hfill 2024}
+\subsection{University of Location $|$ {\normalfont\textit{Master of PG Degree}} \hfill 2024}
 \begin{itemize}
     \item Cumulative GPA: 3.98
     \item Related Coursework: Intro to Programming with Python, Database Administration
     \item Rover Resume Award
 \end{itemize}
 
-\subsection{University of Graduation \hfill City, State}
-\subsubsection{Degree Name \hfill Year}
+\subsection{Graduation College \hfill City, State}
+\subsubsection{Degree Name (B.S.) \hfill Year}
 \begin{itemize}
     \item GPA: 3.4 (Mention if good)
     \item Related Coursework (list of relavent classes to the job)
