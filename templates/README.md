@@ -1,0 +1,1 @@
+Check folders for templates.
