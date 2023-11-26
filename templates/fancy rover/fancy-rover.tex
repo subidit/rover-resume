@@ -1,18 +1,23 @@
-\documentclass{article}
+%-------------------------
+% Rover Resume (Fancy) Template
+% Link: https://github.com/subidit/rover-resume
+%------------------------
 
-\usepackage[sfdefault, light]{roboto}
+\documentclass[11pt]{article}
+
+\usepackage[sfdefault, light]{roboto} % https://tug.org/FontCatalogue/
 
 \usepackage{geometry}
 \geometry{
 a4paper,
-top=1in,
+top=1.8cm,
 bottom=1in,
 left=2.5cm,
 right=2.5cm
 }
 
-\setcounter{secnumdepth}{0}
-\pdfgentounicode=1
+\setcounter{secnumdepth}{0} % remove section numbering
+\pdfgentounicode=1 % make ATS friendly
 
 \usepackage{enumitem}
 \setlist[itemize]{
@@ -27,12 +32,12 @@ right=2.5cm
 \titlespacing{\subsection}{0pt}{*0}{*0}
 \titlespacing{\subsubsection}{0pt}{*0}{*0}
 % \titleformat{<command>}[<shape>]{<format>}{<label>}{<sec>}{<before-code>}[<after-code>]  
-\titleformat{\section}{\color{Sepia}\large\bfseries\uppercase}{}{}{\ruleafter}[\global\RemVStrue]
-\titleformat{\subsection}{\large\fontseries{semibold}\selectfont}{}{}{\rvs}
-\titleformat{\subsubsection}{\large\fontseries{semibold}\selectfont\itshape}{}{}{}
+\titleformat{\section}{\color{darkgray}\large\bfseries\uppercase}{}{}{\ruleafter}[\global\RemVStrue]
+\titleformat{\subsection}{\large\fontseries{m}\selectfont}{}{}{\rvs}
+\titleformat{\subsubsection}{\large\slshape}{}{}{}
 
 \usepackage{xhfill} 
-\newcommand\ruleafter[1]{#1~\xrfill[.5ex]{.5pt}[lightgray]} % add rule after title in .5 x-height 
+\newcommand\ruleafter[1]{#1~\xrfill[.5ex]{.5pt}[gray]} % add rule after title in .5 x-height 
 
 \newif\ifRemVS % remove vspace 
 \newcommand{\rvs}{
@@ -42,8 +47,8 @@ right=2.5cm
     \global\RemVSfalse
 }
 
-% \usepackage[dvipsnames, svgnames, x11names]{xcolor}
-\usepackage[dvipsnames]{xcolor}
+% \usepackage[dvipsnames, svgnames, x11names]{xcolor} 
+\usepackage[]{xcolor} % xcolor.pdf Sec.4 Colors by Name
 \colorlet{icnclr}{gray}
 % \colorlet [⟨type⟩]{⟨name⟩}[⟨num model⟩]{⟨color ⟩}
 % \definecolor[⟨type⟩]{⟨name⟩}{⟨model-list⟩}{⟨spec-list⟩}
@@ -53,7 +58,7 @@ right=2.5cm
 \usepackage[bookmarks=false]{hyperref} % [imp!]
 \hypersetup{ % https://en.wikibooks.org/wiki/LaTeX/Hyperlinks
     colorlinks=true,
-    urlcolor=Fuchsia,
+    % urlcolor=Fuchsia,
     pdftitle={My Resume},
 }
 
@@ -69,7 +74,7 @@ right=2.5cm
 
 %== HEADER ==%
 \begin{center}
-    {\fontsize{46}{36}\robotothin FANCY\robotoblack ROVER} \\ \medskip
+    {\fontsize{42}{36}\selectfont \robotothin FANCY\robotoblack ROVER} \\ \medskip
     {\color{icnclr}\faEnvelope[regular]} \href{mailto:hi@example.com}{fancy@rover.com} $|$ 
     {\color{icnclr}\faIcon{mobile-alt}} \href{tel:1234567890}{123 456 7890} $|$
     {\color{icnclr}\faLinkedinIn} \href{https://www.linkedin.com/in/}{linkedin.com/in/fancy}
