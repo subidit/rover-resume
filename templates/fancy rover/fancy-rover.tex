@@ -34,17 +34,17 @@ right=2.5cm
 \titlespacing{\subsection}{0pt}{*0}{*0}
 \titlespacing{\subsubsection}{0pt}{*0}{*0}
 % \titleformat{<command>}[<shape>]{<format>}{<label>}{<sec>}{<before-code>}[<after-code>]  
-\titleformat{\section}{\sffamily\color{darkgray}\large\bfseries\uppercase}{}{}{\ruleafter}[\global\RemVStrue]
+\titleformat{\section}{\color{Sepia}\large\AlegreyaSansExtraBold\uppercase}{}{}{\ruleafter}[\global\RemVStrue]
 \titleformat{\subsection}{\sffamily\large\scshape}{}{}{\rvs}
 \titleformat{\subsubsection}{\large\itshape}{}{}{}
 
 \usepackage{xhfill} 
-\newcommand\ruleafter[1]{#1~\xrfill[.5ex]{.5pt}[gray]} % add rule after title in .5 x-height 
+\newcommand\ruleafter[1]{#1~\xrfill[.5ex]{.5pt}[Sepia]} % add rule after title in .5 x-height 
 
-\newif\ifRemVS % remove vspace 
+\newif\ifRemVS % remove vspace between \section & \subsection
 \newcommand{\rvs}{
     \ifRemVS
-        \vspace{-.5ex}
+        \vspace{-.9ex}
     \fi
     \global\RemVSfalse
 }
@@ -69,17 +69,17 @@ right=2.5cm
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}	
 \fancyhf{}							
-\cfoot{\color{gray} Rover R\'esum\'e -- Page \thepage{} of \totalpages}
+\cfoot{\color{darkgray} Rover R\'esum\'e -- Page \thepage{} of \totalpages}
 
 
 \begin{document}
 
 %== HEADER ==%
 \begin{center}
-    {\fontsize{36}{36}\selectfont\bfseries\sffamily FANCY ROVER} \\ \medskip
+    {\fontsize{36}{36}\AlegreyaSansExtraBold\selectfont FANCY ROVER} \\ \medskip
     {\color{icnclr}\faEnvelope[regular]} \href{mailto:hi@example.com}{fancy@rover.com} $|$ 
     {\color{icnclr}\faIcon{mobile-alt}} \href{tel:1234567890}{123 456 7890} $|$
-    {\color{icnclr}\faLinkedinIn} \href{https://www.linkedin.com/in/}{linkedin.com/in/fancy}
+    {\color{icnclr}\faLinkedinIn} \href{https://www.linkedin.com/}{linkedin.com/in/fancy\_rover}
 \end{center}
 
 \section{Education}

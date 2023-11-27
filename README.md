@@ -1,4 +1,5 @@
 # Rover Resume Template
+
 ## Overview
 
 The **Rover Resume** template is designed with simplicity and design principles in mind. It uses basic LaTeX commands and popular packages- keeping it very easy to follow and customise while retaining visual appeal. 
@@ -7,18 +8,20 @@ The **Rover Resume** template is designed with simplicity and design principles 
 |:----:|:-----:|
 | Fancy Rover Template | Base Rover Template |
 
-## Features
-- Clean and professional design.
-- Easy-to-follow LaTeX template.
+
+### Motivation
+
+I hate it when a template is so convoluted with custom commands and refractored files that it becomes impossible to understand how it's working. Then it becomes a big task to change even a single spacing in the document. I wanted to make a template that would read like an instruction manual and only use customisations necessary to make a document look like a resume. 
 
 
 ## Usage
 
-1. Clone or download the Rover Resume template.
-2. Copy the [template](https://github.com/subidit/rover-resume/blob/main/rover-template.tex) to a new Overleaf project. Or Open the [LaTeX template file](https://github.com/subidit/rover-resume/blob/main/rover-template.tex) in your preferred editor.
-3. Fill in your personal information, including name, contact details, and links to LinkedIn and GitHub.
-4. Populate the sections for Education, Experience, Certifications & Awards, and Skills & Interests with your relevant information.
-5. Customize the formatting, such as fonts and spacing, to match your preferences.
+1. Use `\subsection{}` and `\subsubsection` for primary and secondary titles.
+2. Use `\hfill` to right align text in the title.
+3. Use `itemize` lists for bullet points.
+4. Fill in your personal information, including name, contact details, and links to LinkedIn and GitHub.
+5. Populate the sections for Education, Experience, Certifications & Awards, and Skills & Interests with your relevant information.
+
 
 ## Customization
 
