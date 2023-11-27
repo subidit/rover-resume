@@ -5,10 +5,8 @@
 
 \documentclass[11pt]{article} % fontsize 10pt/11pt/12pt
 
-\usepackage[margin=1in]{geometry}
+\usepackage[a4paper, margin=1in]{geometry}
 \pagestyle{empty} % remove page number
-
-\usepackage{mlmodern} % use lmodern for lighter font
 
 \setcounter{secnumdepth}{0} % remove section numbering
 
@@ -17,12 +15,11 @@
   \setlist[description]{itemsep=0pt}
 
 \usepackage{titlesec} 
-% \titlespacing{⟨command ⟩}{⟨left ⟩}{⟨before-sep ⟩}{⟨after-sep ⟩}[⟨right-sep ⟩]
-  % \titlespacing{\section}{0pt}{3ex}{1ex} 
   \titlespacing{\subsection}{0pt}{*0}{*0}
   \titlespacing{\subsubsection}{0pt}{*0}{*0}
-% \titleformat{⟨command ⟩}[⟨shape ⟩]{⟨format ⟩}{⟨label ⟩}{⟨sep ⟩}{⟨before-code ⟩}[⟨after-code ⟩]
   \titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule]
+  \titleformat{\subsection}{\large\scshape}{}{}{}
+  \titleformat{\subsubsection}{\large\itshape}{}{}{}
 
 
 \begin{document}

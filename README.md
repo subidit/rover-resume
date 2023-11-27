@@ -3,7 +3,9 @@
 
 The **Rover Resume** template is designed with simplicity and design principles in mind. It uses basic LaTeX commands and popular packages- keeping it very easy to follow and customise while retaining visual appeal. 
 
-![Sample Resume Output](/images/fancy-rover.jpg)
+| [![Fancy Rover](/images/fancy-rover.jpg)](/templates/fancy%20rover/fancy-rover.pdf) | [![Base Rover](/images/base-rover.jpg)](/templates/base%20rover/base-rover.pdf) |
+|:----:|:-----:|
+| Fancy Rover Template | Base Rover Template |
 
 ## Features
 - Clean and professional design.
