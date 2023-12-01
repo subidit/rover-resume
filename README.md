@@ -8,6 +8,8 @@ The **Rover Resume** template is designed with simplicity and design principles 
 |:----:|:-----:|
 | Fancy Rover Template | Base Rover Template |
 
+[![Milky Rover](/images/milky-rover.jpg)](/templates/milky%20rover/milky-rover.pdf) 
+Milky Rover Template inspired from Butterick’s practical typography.
 
 ### Motivation
 

@@ -1,0 +1,76 @@
+\documentclass{article}
+
+\usepackage{Alegreya} % https://tug.org/FontCatalogue/
+\usepackage{AlegreyaSans}
+
+\usepackage[margin=1.5in]{geometry}
+\setcounter{secnumdepth}{0} 
+\usepackage{soul}
+\usepackage{microtype}
+
+\usepackage[explicit]{titlesec}
+\titleformat{\section}{\titlerule\smallskip\sffamily\footnotesize\bfseries\uppercase}{}{}{\so{#1}}
+\titleformat{\subsection}{\large\AlegreyaMedium}{}{}{#1}
+\titleformat{\subsubsection}{\itshape}{}{}{#1}
+\titlespacing{\subsection}{0pt}{*1}{*0.5}
+\titlespacing{\subsubsection}{0pt}{*0.5}{*1}
+
+\usepackage{enumitem}
+\setlist{itemsep=0pt}
+\setlist[itemize]{left=0pt .. 2em}
+
+\usepackage[page]{totalcount}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}	
+\fancyhf{}							
+\cfoot{\sffamily\MakeUppercase{\textls[150]{Rover R\'esum\'e — Page \thepage{} of \totalpages}}}
+
+\begin{document}
+	\begin{center}
+		{\LARGE\AlegreyaSansMedium \so{TRIXIE B. ARGON}} \\ \bigskip
+		\sffamily\textls[180]{5419 HOLLYWOOD BLVD STE C731, LOS ANGELES CA 90027} \\ \medskip
+		\textls[180]{(323) 555 1435 \quad TRIXIEARGON@GMAIL.COM}
+	\end{center}
+
+	\section{Education}
+	\subsection{UCLA Anderson School of Management \hfill 2011–13}
+	\begin{itemize}
+		\item Cumulative GPA: 3.98
+		\item Academic interests: real-estate financing, criminal procedure, corporations
+		\item Henry Murtaugh Award
+	\end{itemize}
+	
+	\subsection{Hartford University \hfill 2003–07}
+	\begin{itemize}
+		\item B.A. \textit{summa cum laude}, Economics
+		\item Extensive coursework in Astrophysics, Statistics
+		\item Van Damme Scholarship
+	\end{itemize}
+	
+\section{business experience}
+	\subsection{Boxer Bedley \& Ball Capital Advisors \hfill 2008–11}
+	\subsubsection{Equity analyst}
+	\begin{itemize}
+		\item Performed independent research on numerous American industries, including:
+		\item Steelmaking, croquet, semiotics, and butterscotch manufacturing
+		\item Led company in equities analyzed in two quarters
+	\end{itemize}
+	
+\section{other work experience}
+	\subsection{Proximate Cause \hfill 2007–08}
+	\subsubsection{Assistant to the director}
+	\begin{itemize}
+		\item Helped devise fundraising campaigns for this innovative nonprofit
+		\item Handled lunch orders and general errands
+	\end{itemize}
+	
+	\subsection{Hot Topic \hfill 2004–06}
+	\subsubsection{Retail-sales associate}
+	\begin{itemize}
+		\item Top in-store sales associate in seven out of eight quarters
+		\item Inventory management
+		\item Training and recruiting
+	\end{itemize}
+	
+\end{document}
