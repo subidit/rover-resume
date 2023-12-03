@@ -6,8 +6,8 @@
 \documentclass[11pt]{article}
 
 \usepackage[T1]{fontenc}
-\usepackage{Alegreya} % https://tug.org/FontCatalogue/
-\usepackage{AlegreyaSans}
+\usepackage{inter} % https://tug.org/FontCatalogue/
+\renewcommand*\familydefault{\sfdefault}
 
 \usepackage{geometry}
 \geometry{
@@ -27,16 +27,17 @@ right=2.5cm
     left=0pt..1.5em
 }
 \setlist[description]{itemsep=0pt}
+\setlist[enumerate]{align=left}
 
 \usepackage{titlesec}
 % \titlespacing{command}{left spacing}{before spacing}{after spacing}[right]
-\titlespacing{\section}{0pt}{*3}{*1}
+% \titlespacing{\section}{0pt}{*3}{*1}
 \titlespacing{\subsection}{0pt}{*0}{*0}
 \titlespacing{\subsubsection}{0pt}{*0}{*0}
 % \titleformat{<command>}[<shape>]{<format>}{<label>}{<sec>}{<before-code>}[<after-code>]  
-\titleformat{\section}{\color{Sepia}\sffamily\large\bfseries\uppercase}{}{}{\ruleafter}[\global\RemVStrue]
-\titleformat{\subsection}{\sffamily\large\bfseries\scshape}{}{}{\rvs}
-\titleformat{\subsubsection}{\large\bfseries\itshape}{}{}{}
+\titleformat{\section}{\color{Sepia}\large\fontseries{black}\selectfont\uppercase}{}{}{\ruleafter}[\global\RemVStrue]
+\titleformat{\subsection}{\large\fontseries{semibold}\selectfont}{}{}{\rvs}
+\titleformat{\subsubsection}{\large\fontseries{medium}\selectfont}{}{}{}
 
 \usepackage{xhfill} 
 \newcommand\ruleafter[1]{#1~\xrfill[.5ex]{.5pt}[gray]} % add rule after title in .5 x-height 
@@ -76,7 +77,7 @@ right=2.5cm
 
 %== HEADER ==%
 \begin{center}
-    {\fontsize{36}{36}\AlegreyaSansBlack\selectfont FANCY ROVER} \\ \medskip
+    {\fontsize{36}{36}\selectfont\interthin FANCY\interheavy ROVER} \\ \bigskip
     {\color{icnclr}\faEnvelope[regular]} \href{mailto:hi@example.com}{fancy@rover.com} $|$ 
     {\color{icnclr}\faIcon{mobile-alt}} \href{tel:1234567890}{123 456 7890} $|$
     {\color{icnclr}\faLinkedinIn} \href{https://www.linkedin.com/}{linkedin.com/in/fancy\_rover}
