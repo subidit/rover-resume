@@ -40,12 +40,12 @@ right=2.5cm
 \titleformat{\subsubsection}{\large\fontseries{medium}\selectfont}{}{}{}
 
 \usepackage{xhfill} 
-\newcommand\ruleafter[1]{#1~\xrfill[.5ex]{.5pt}[gray]} % add rule after title in .5 x-height 
+\newcommand\ruleafter[1]{#1~\xrfill[.5ex]{1pt}[gray]} % add rule after title in .5 x-height 
 
 \newif\ifRemVS % remove vspace between \section & \subsection
 \newcommand{\rvs}{
     \ifRemVS
-        \vspace{-.9ex}
+        \vspace{-1.5ex}
     \fi
     \global\RemVSfalse
 }
