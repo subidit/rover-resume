@@ -1,8 +1,6 @@
 # Rover Resume Template
 
-## Overview
-
-The **Rover Resume** template is designed with simplicity and design principles in mind. It uses basic LaTeX commands and popular packages- keeping it very easy to follow and customise while retaining visual appeal. 
+## Preview
 
 | [![Fancy Rover](/images/fancy-rover.jpg)](/templates/fancy%20rover/fancy-rover.pdf) | [![Base Rover](/images/base-rover.jpg)](/templates/base%20rover/base-rover.pdf) |
 |:----:|:-----:|
@@ -14,24 +12,18 @@ The **Rover Resume** template is designed with simplicity and design principles 
 
 ### Motivation
 
-I hate it when a template is so convoluted with custom commands and refractored files that it becomes impossible to understand how it's working. Then it becomes a big task to change even a single spacing in the document. I wanted to make a template that would read like an instruction manual and only use customisations necessary to make a document look like a resume. 
+I wanted to make a template that reads like an instruction manual and only uses commands necessary to make a document look like a resume. 
 
 
-## Usage
+## How to Use
 
-1. Use `\subsection{}` and `\subsubsection` for primary and secondary titles.
-2. Use `\hfill` to right align text in the title.
-3. Use `itemize` lists for bullet points.
-4. Fill in your personal information, including name, contact details, and links to LinkedIn and GitHub.
-5. Populate the sections for Education, Experience, Certifications & Awards, and Skills & Interests with your relevant information.
+1. `\section` for Education, Experience, Certifications, Awards, Skills & Interests etc.
+2. Use `\subsection{}` and `\subsubsection` for primary and secondary titles like Institution Name, Position title, Duration etc.
+3. Use `\hfill` to right align text in the title.
+4. Use `itemize` lists for bullet points.
 
 
-## Customization
-
-- Adjust fonts, spacing, and formatting according to your preferences.
-- Personalize section headers and sub-headers to better suit your resume content.
-
-## Contact
+## Support
 
 For inquiries or support, use the [Discussions](https://github.com/subidit/rover-resume/discussions) tab.
 
@@ -41,7 +33,7 @@ Happy job hunting!
 
 ## License
 
-<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/subidit/rover-resume">Rover Resume</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/subidit/">Subidit</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><br><a property="dct:title" rel="cc:attributionURL" href="https://github.com/subidit/rover-resume">Rover Resume</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/subidit/">Subidit</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0</a></p>
 
 <!-- 
 
