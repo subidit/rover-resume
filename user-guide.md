@@ -1,5 +1,4 @@
-## What is it
-Here we have some snippets for generating headers of different style. Each has its pros and cons. Pick and choose the one that meets your needs.
+# Headers
 
 ## Basic Centered
 This is the most versatile implimentation with no requiremt of any other packages and also looks balanced in most cases.
@@ -107,10 +106,8 @@ This is the most versatile implimentation with no requiremt of any other package
     \columnbreak
 
     \begin{center}
-  %\vspace{\fill}
         {\huge\textsf{\textbf{Bold Sans Serif}}} \par
         1 infinite loop, Menlo Park, CA \par
-  %\vspace{\fill}
     \end{center}
 
     \columnbreak
@@ -122,14 +119,16 @@ This is the most versatile implimentation with no requiremt of any other package
 \end{multicols}
 ```
 
-## List structures in LaTeX are simply environments which essentially come in three types:
+# Lists
+
+List structures in LaTeX are simply environments which essentially come in three types:
 
 - `itemize` for a bullet list
 - `enumerate` for an enumerated list and
 - `description` for a descriptive list.
 
-# `enumitem` package
-*Control layout of itemize, enumerate, description.* [Link](https://ctan.org/pkg/enumitem)
+## `enumitem` package
+*Control layout of itemize, enumerate, description.* [Package Link](https://ctan.org/pkg/enumitem)
 
 
 We use this package to customize the three basic list environments (`enumerate`, `itemize` and `description`) and to design your own lists, with a `⟨key⟩=⟨value⟩` syntax. 
@@ -153,50 +152,27 @@ Extensions provided by enumitem:
 ### Some common settings
 To remove the vertical space altogether in a list:
 
-```
+```tex
 \begin{enumerate}[nosep]
 ```
 
 To remove the vertical space altogether in all lists: 
 
-```
+```tex
 \setlist{nosep}
 ```
 
 To start the label at the margin and the item text at the current parindent:
 
-```
+```tex
 \begin{enumerate}[left=0pt .. \parindent]
 ```
 
 ### Horizontal spacing of labels
 ```
-\leftmargin + \itemindent = \labelindent + \labelwidth + \labelsep
+\leftmargin + \itemindent = 
+\labelindent + \labelwidth + \labelsep
 ```
-
-
-**Options for the `enumitem` Package:**
-
-| Option         | Description                                      |
-|----------------|--------------------------------------------------|
-| `label`        | Customizes the label for the list items          |
-| `leftmargin`   | Sets the left margin of the list                 |
-| `itemsep`      | Adjusts the vertical spacing between items       |
-| `parsep`       | Sets the space between paragraphs within items   |
-| `topsep`       | Defines the space before and after the list      |
-| `partopsep`    | Space before and after the list when it starts a new paragraph |
-| `itemindent`   | Indentation of the item text                      |
-| `listparindent` | Paragraph indentation within items (for descriptions) |
-| `left`         | Adjusts the left margin (can be negative)        |
-| `labelindent`  | Indentation of the label                          |
-| `resume`       | Resumes numbering from the previous list         |
-| `align`        | Adjusts the alignment of labels                   |
-| `widest`       | Sets the widest label as the reference for indentation |
-| `start`        | Specifies the start value for numbering          |
-| `style`        | Defines the style of labels (e.g., 1, (a), i, etc.) |
-| `ref`          | Provides reference to another list               |
-| `before`       | Inserts content before the list                  |
-| `after`        | Inserts content after the list                   |
 
 
 # Titles
@@ -209,7 +185,7 @@ To start the label at the margin and the item text at the current parindent:
 * `\subsubsection{}` - for Secondary tile containg associated information about primary title. For eg: *Degree Name, Year*, *Job Title, Location* etc.
 
 
-## Package Options
+# Package Options
 
 `titlesec` package gives us the following commands to control the formatting and spacing of titles.
 ```
@@ -220,39 +196,62 @@ To start the label at the margin and the item text at the current parindent:
 
 Since we have already removed the section numberings with `\setcounter{secnumdepth}{0}`, hence we can leave the commands related to those blank. 
 
-**Options for the `titlesec` Package:**
 
-| Option       | Description                                  |
-|--------------|----------------------------------------------|
-| `titleformat` | Customizes the format of section titles    |
-| `titlelabel`  | Customizes the label of the section        |
-| `titlespacing`| Adjusts the spacing around section titles  |
-| `titleline`   | Draws a line under section titles          |
-| `pagestyles`  | Customizes page headers and footers        |
-| `newparttoc`  | Adds a table of contents for parts         |
-| `appendix`    | Configuration for appendices               |
-| `extramarks`  | Marks for page headers/footers             |
-| `toctitles`   | Formatting of titles in the table of contents |
+### Options for the `titlesec` Package:
+
+| Option         | Description                                   |
+| -------------- | --------------------------------------------- |
+| `titleformat`  | Customizes the format of section titles       |
+| `titlelabel`   | Customizes the label of the section           |
+| `titlespacing` | Adjusts the spacing around section titles     |
+| `titleline`    | Draws a line under section titles             |
+| `pagestyles`   | Customizes page headers and footers           |
+| `newparttoc`   | Adds a table of contents for parts            |
+| `appendix`     | Configuration for appendices                  |
+| `extramarks`   | Marks for page headers/footers                |
+| `toctitles`    | Formatting of titles in the table of contents |
 
 
+### Options for the `enumitem` Package:
 
-**Options for the `hyperref` Package:**
+| Option          | Description                                                    |
+| --------------- | -------------------------------------------------------------- |
+| `label`         | Customizes the label for the list items                        |
+| `leftmargin`    | Sets the left margin of the list                               |
+| `itemsep`       | Adjusts the vertical spacing between items                     |
+| `parsep`        | Sets the space between paragraphs within items                 |
+| `topsep`        | Defines the space before and after the list                    |
+| `partopsep`     | Space before and after the list when it starts a new paragraph |
+| `itemindent`    | Indentation of the item text                                   |
+| `listparindent` | Paragraph indentation within items (for descriptions)          |
+| `left`          | Adjusts the left margin (can be negative)                      |
+| `labelindent`   | Indentation of the label                                       |
+| `resume`        | Resumes numbering from the previous list                       |
+| `align`         | Adjusts the alignment of labels                                |
+| `widest`        | Sets the widest label as the reference for indentation         |
+| `start`         | Specifies the start value for numbering                        |
+| `style`         | Defines the style of labels (e.g., 1, (a), i, etc.)            |
+| `ref`           | Provides reference to another list                             |
+| `before`        | Inserts content before the list                                |
+| `after`         | Inserts content after the list                                 |
 
-| Option           | Description                                  |
-|------------------|----------------------------------------------|
-| `colorlinks`     | Color links (true or false)                  |
-| `linkcolor`      | Color for internal links                     |
-| `citecolor`      | Color for citation links                     |
-| `urlcolor`       | Color for URL links                          |
-| `linkbordercolor` | Color of link borders                       |
-| `pdfborder`      | Style of the link border                     |
-| `linktoc`        | Table of contents link behavior              |
-| `breaklinks`     | Allow links to break over multiple lines     |
-| `hidelinks`      | Hide links (true or false)                   |
-| `hypertexnames`  | Use guessable names for links                |
-| `bookmarks`      | Add PDF bookmarks (true or false)            |
-| `bookmarksopen`  | Open bookmarks on startup (true or false)    |
+
+### Options for the `hyperref` Package:
+
+| Option              | Description                               |
+| ------------------- | ----------------------------------------- |
+| `colorlinks`        | Color links (true or false)               |
+| `linkcolor`         | Color for internal links                  |
+| `citecolor`         | Color for citation links                  |
+| `urlcolor`          | Color for URL links                       |
+| `linkbordercolor`   | Color of link borders                     |
+| `pdfborder`         | Style of the link border                  |
+| `linktoc`           | Table of contents link behavior           |
+| `breaklinks`        | Allow links to break over multiple lines  |
+| `hidelinks`         | Hide links (true or false)                |
+| `hypertexnames`     | Use guessable names for links             |
+| `bookmarks`         | Add PDF bookmarks (true or false)         |
+| `bookmarksopen`     | Open bookmarks on startup (true or false) |
 | `bookmarksnumbered` | Number the bookmarks (true or false)      |
-| `pdfstartview`   | Initial view of PDF document                 |
-| `pdfpagemode`    | Page view on opening the PDF                 |
-
+| `pdfstartview`      | Initial view of PDF document              |
+| `pdfpagemode`       | Page view on opening the PDF              |
