@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage{fontspec}
+
+\setmainfont{Alegreya}[
+  Extension=.otf,
+  UprightFont=*-Regular,
+  UprightFeatures={SmallCapsFont=*SC-Regular},
+  ItalicFont=*-Italic,
+  ItalicFeatures={SmallCapsFont=*SC-Italic},
+  BoldFont=*-Bold,
+  BoldFeatures={SmallCapsFont=*SC-Bold},
+  BoldItalicFont=*-BoldItalic,
+  BoldItalicFeatures={SmallCapsFont=*SC-BoldItalic},
+  FontFace={sb}{n}{*-Medium},
+  FontFace={sb}{it}{*-MediumItalic},
+  FontFace={sb}{sc}{*SC-Medium},
+  FontFace={sb}{scit}{*SC-MediumItalic},
+  FontFace={ub}{n}{*-ExtraBold},
+  FontFace={ub}{it}{*-ExtraBoldItalic},
+  FontFace={ub}{sc}{*SC-ExtraBold},
+  FontFace={ub}{scit}{*SC-ExtraBoldItalic},
+  FontFace={k}{n}{*-Black},
+  FontFace={k}{it}{*-BlackItalic},
+  FontFace={k}{sc}{*SC-Black},
+  FontFace={k}{scit}{*SC-BlackItalic},
+]
+\DeclareTextFontCommand{\textsemibold}{\fontseries{sb}\selectfont}
+\DeclareTextFontCommand{\textblack}{\fontseries{k}\selectfont}
+\DeclareTextFontCommand{\textextrabold}{\fontseries{ub}\selectfont}
+
+\begin{document}
+
+Normal \textit{Italic} \textbf{Bold} \textbf{\textit{Bold Italic}}
+
+\textsc{Small Caps} \textbf{\textsc{Bold SC}} \textit{\textsc{Italic SC}} \textbf{\textit{\textsc{Bold Italic SC}}}
+
+\textsemibold{Medium} \textsemibold{\textit{Medium Italic}}
+
+\textsemibold{\textsc{Medium SC}} \textsemibold{\textit{\textsc{Medium Italic SC}}}
+
+\textextrabold{Extra Bold} \textextrabold{\textit{Extra Bold Italic}}
+
+\textextrabold{\textsc{Extra Bold SC}} \textextrabold{\textit{\textsc{Extra Bold Italic SC}}}
+
+\textblack{Black} \textblack{\textit{Black Italic}}
+
+\textblack{\textsc{Black SC}} \textblack{\textit{\textsc{Black Italic SC}}}
+
+\end{document}

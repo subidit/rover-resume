@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{Alegreya}
+\usepackage{booktabs,array}
+
+\DeclareTextFontCommand{\textsemibold}{\AlegreyaMedium}
+\DeclareTextFontCommand{\textblack}{\AlegreyaBlack}
+\DeclareTextFontCommand{\textextrabold}{\AlegreyaExtraBold}
+
+\begin{document}
+
+\begin{tabular}{@{}>{\sffamily}lll@{}}
+\toprule
+\sffamily Weight & \multicolumn{2}{c@{}}{\sffamily Shape} \\
+\cmidrule(l){2-3}
+& \multicolumn{1}{c}{\sffamily Upright} & \multicolumn{1}{c@{}}{\sffamily Italic} \\
+\midrule
+Normal & Normal & \textit{Italic} \\
+Normal SC & \textsc{Small Caps} & \textit{\textsc{Italic SC}} \\
+Medium & \textsemibold{Medium} & \textsemibold{\textit{Medium Italic}} \\
+Medium SC & \textsemibold{\textsc{Medium SC}} & \textsemibold{\textit{\textsc{Medium Italic SC}}} \\
+Bold & \textbf{Bold} & \textbf{\textit{Bold Italic}} \\
+Bold SC & \textbf{\textsc{Bold SC}} & \textbf{\textit{\textsc{Bold Italic SC}}} \\
+Extra Bold & \textextrabold{Extra Bold} & \textextrabold{\textit{Extra Bold Italic}} \\
+Extra Bold SC & \textextrabold{\textsc{Extra Bold SC}} & \textextrabold{\textit{\textsc{Extra Bold Italic SC}}} \\
+Black & \textblack{Black} & \textblack{\textit{Black Italic}} \\
+Black SC & \textblack{\textsc{Black SC}} & \textblack{\textit{\textsc{Black Italic SC}}} \\
+\bottomrule
+\end{tabular}
+
+\end{document}

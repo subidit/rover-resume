@@ -6,8 +6,9 @@
 \setsansfont{Alegreya Sans}
 
 \newfontfamily\asans{Alegreya Sans}[
-LetterSpace=12.0,
-WordSpace=3.0 
+LetterSpace=9.0,
+WordSpace=2.0,
+Numbers=Lining
 ]
 
 \usepackage[margin=1.5in]{geometry}
@@ -17,10 +18,12 @@ WordSpace=3.0
 \setlist[itemize]{left=0pt..2em, itemsep=0pt}
 
 \usepackage{titlesec}
-\titlespacing{\section}{0pt}{*3}{*1.5}
+% \titlespacing{\section}{0pt}{*3}{*1.5}
 \titlespacing{\subsection}{0pt}{*1}{*0.5}
 \titlespacing{\subsubsection}{0pt}{*0.5}{*1}
-\titleformat{\section}{\titlerule\smallskip\footnotesize\bfseries\asans\addfontfeature{LetterSpace=5.0}\uppercase}{}{}{}
+\titleformat{\section}{\titlerule\smallskip\footnotesize\asans\bfseries\uppercase}{}{}{}
+\titleformat{\subsection}{\large\bfseries}{}{}{}
+\titleformat{\subsubsection}{\large\itshape}{}{}{}
 
 \usepackage[page]{totalcount}
 \usepackage{fancyhdr}
@@ -34,7 +37,7 @@ WordSpace=3.0
 
 \begin{center}
   \asans\MakeUppercase{
-  {\huge\textbf{Trixie B. Argon}} \\ \medskip
+  {\LARGE\textbf{Trixie B. Argon}} \\ \medskip
   5419 Hollywood Blvd Ste C731, Los Angeles Ca 90027 \\
   (323) 555 1435 \quad trixieargon@gmail.com }
 \end{center}
