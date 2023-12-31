@@ -10,12 +10,12 @@
 |:----:|
 | [Milky Rover Template](https://github.com/subidit/rover-resume/tree/main/templates/milky%20rover) inspired from [Butterick’s practical typography](https://practicaltypography.com/resumes.html). |
 
-### Motivation
-
-I wanted to make a template that reads like an instruction manual and only uses commands necessary to make a document look like a resume. 
-
 
 ## How to Use
+
+- Fork this repository. 
+- Choose a template.
+- Fill out your details.
 
 1. `\section` for Education, Experience, Certifications, Awards, Skills & Interests etc.
 2. Use `\subsection{}` and `\subsubsection` for primary and secondary titles like Institution Name, Position title, Duration etc.
