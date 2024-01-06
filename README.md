@@ -13,9 +13,12 @@
 
 ## How to Use
 
-- Fork this repository. 
+- Fork or download this repository. 
 - Choose a template.
 - Fill out your details.
+
+### Quick start
+[Edit on Overleaf.](https://www.overleaf.com/latex/templates/rover-resume/bpzqtssvfgsn)
 
 1. `\section` for Education, Experience, Certifications, Awards, Skills & Interests etc.
 2. Use `\subsection{}` and `\subsubsection` for primary and secondary titles like Institution Name, Position title, Duration etc.
