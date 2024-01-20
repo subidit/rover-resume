@@ -2,13 +2,13 @@
 
 ## Preview
 
-| [![Base Rover](/images/base-rover.jpg)](/templates/base%20rover/base-rover.pdf) | [![Star Rover](/images/star-rover.jpg)](/templates/fancy%20rover/star-rover.pdf) | 
+| [![Base Rover](/images/base-rover.jpg)](/templates/base%20rover/base-rover.pdf) | [![Fancy Rover](/images/fancy-rover.jpg)](/templates/fancy%20rover/fancy-rover.pdf) | 
 |:----:|:-----:|
-| Base Rover Template | Star Rover Template |
+| Base Rover Template | Fancy Rover Template |
 
-| [![Milky Rover](/images/milky-rover.jpg)](/templates/milky%20rover/milky-rover.pdf) | [![Fancy Rover](/images/fancy-rover.jpg)](/templates/fancy%20rover/fancy-rover.pdf) | 
+| [![Milky Rover](/images/milky-rover.jpg)](/templates/milky%20rover/milky-rover.pdf) | [![Star Rover](/images/star-rover.jpg)](/templates/fancy%20rover/star-rover.pdf) | 
 |:----:| :----:|
-| [Milky Rover Template](https://github.com/subidit/rover-resume/tree/main/templates/milky%20rover) inspired from [Butterick’s practical typography](https://practicaltypography.com/resumes.html). | Fancy Rover Template |
+| [Milky Rover Template](https://github.com/subidit/rover-resume/tree/main/templates/milky%20rover) inspired from [Butterick’s practical typography](https://practicaltypography.com/resumes.html). | Star Rover Template |
 
 
 ## How to Use
