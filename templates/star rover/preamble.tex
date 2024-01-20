@@ -1,0 +1,75 @@
+%======== FONT =========
+\usepackage[T1]{fontenc}
+\usepackage[default]{raleway}
+
+%======== MARGIN ========
+\usepackage[a4paper]{geometry}
+\geometry{margin=1.5cm}
+
+%======== COMMANDS ==========
+\newcommand{\uthree}[4]{
+    {\large 
+        {\bfseries #1 $|$ \textit{#2} \hfill #3} \par
+    }
+    \begin{itemize}
+        #4 
+	\end{itemize} 
+    \par\addvspace{2.5ex}%
+}
+
+\newcommand{\ufour}[5]{
+	{\large \bfseries
+        #1 \hfill #2 \par
+	    \textit{#3 \hfill #4} \par
+    }
+	\begin{itemize}
+		#5 
+	\end{itemize} 
+    \par\addvspace{2.5ex}%
+}
+    
+    
+%======== LIST ========
+\usepackage{enumitem}
+\setlist{nosep}
+% \setlist{itemsep=0pt, topsep=0pt}
+\setlist[itemize]{
+    left=0pt .. 1.5em,
+    }
+    
+%======== SECTIONS ========
+\usepackage{soul}
+\usepackage[explicit]{titlesec}
+\titleformat{\section}
+{\large\bfseries\uppercase}
+{}{}
+{\hrulefill\ \so{#1} \hrulefill}
+% {\center \so{#1}}
+% {#1 \hrulefill}
+
+%======== FOOTER ============
+\usepackage[page]{totalcount}
+\usepackage{fancyhdr}
+\usepackage{ifthen}
+
+\AtBeginDocument{
+    \ifthenelse{\totalpages>1}
+    {\pagestyle{fancy}} 
+    {\pagestyle{empty}} % no page number if only one page
+}
+    
+\renewcommand{\headrulewidth}{0pt}	
+\fancyhf{}							
+\cfoot{\color{gray}Rover Resume -- Page \thepage{} of\enspace\totalpages}
+
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=darkgray
+}
+    
+\setcounter{secnumdepth}{0} 
+\setlength{\parindent}{0pt}
+
+\pdfgentounicode=1
