@@ -1,3 +1,22 @@
+# Base 
+```latex
+\usepackage[empty]{fullpage}
+\setcounter{secnumdepth}{0} % remove section numbering
+
+\usepackage{enumitem} % formatting list style
+  \setlist[itemize]{left=0pt..1.5em}
+  \setlist{itemsep=0pt, align=left}
+  % \setlist{nosep}
+
+\usepackage{titlesec}
+  \titlespacing{\section}{0pt}{*4}{*2}
+  \titlespacing{\subsection}{0pt}{*3}{*0}
+  \titlespacing{\subsubsection}{0pt}{*0}{*0.5}
+  \titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule]
+  \titleformat{\subsection}{\large\bfseries\scshape}{}{}{}
+  \titleformat{\subsubsection}{\large\bfseries\itshape}{}{}{}
+```
+
 # Headers
 
 ## Basic Centered
