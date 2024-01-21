@@ -4,22 +4,26 @@
 
 \begin{document}
 
-\begin{center}
-  \begin{minipage}{0.5\textwidth}
-    {\Huge\bfseries
-      STAR ROVER % Name Here
-    } \\ \medskip 
-    Resume Template % Title [optional]
-  \end{minipage} \hfill
-  \begin{minipage}{0.4\textwidth}
-    \raggedleft 
-    Email: \href{mailto:hi@example.com}{star@rover.com} \\
-    Mobile: \href{tel:1234567890}{123 456 7890} \\
-    \href{https://www.linkedin.com/}{linkedin.com/in/star\_rover} \\
-    \href{https://www.github.com/}{github.com/star\_rover}
-  \end{minipage}
-\end{center}
+\begin{multicols}{3}
+  \begin{flushleft}
+    \color{gray}{\faPhone} \href{tel:1234567890}{123 456 7890} \\
+    \color{gray}{\faEnvelope} \href{mailto:youremail@example.com}{email@example.com} \\
+  \end{flushleft}
+  
+\columnbreak
 
+  \begin{center}
+      {\huge\bfseries STAR ROVER} \par
+      1 infinite loop, Menlo Park, CA \par
+  \end{center}
+
+\columnbreak
+
+  \begin{flushright}
+    \href{https://www.linkedin.com/in/yourprofile}{yourprofile} {\color{gray}{\faLinkedin}} \\
+    \href{https://github.com/yourusername}{yourusername} {\textcolor{gray}{\faGithub}} \\
+  \end{flushright}
+\end{multicols}
 
 \section{Education}
 %=============%
@@ -48,7 +52,7 @@
 
 \section{Projects}
 %===========%
-\uthree{Project Name}{\href{http://github.com}{GitHub-link}}{Jun 2022}{
+\uthree{Project Name}{\href{http://github.com}{Project-link}}{Jun 2022}{
     \item Tech used, Language, Frameworks etc.
     \item Implemented ABC feature
     \item Optimised XYZ by 50\%
@@ -76,7 +80,7 @@
 
 \section{Publications}
 %===================%
-\begin{enumerate}[label={[\texttt{\arabic*}]}, align=left]
+\begin{enumerate}[label={[\texttt{\arabic*}]}, left=0pt .. 1.5em]
     \item Doe, J. (2021). Title of first article. \emph{Journal Name}, \emph{Volume}(Issue), page range.
     \item Doe, J. (2020). Title of second article. \emph{Journal Name}, \emph{Volume}(Issue), page range.
     \item Doe, J., \& Smith, J. (2019). Title of third article. \emph{Journal Name}, \emph{Volume}(Issue), page range.

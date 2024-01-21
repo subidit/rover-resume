@@ -1,6 +1,10 @@
 %======== FONT =========
 \usepackage[T1]{fontenc}
-\usepackage[default, semibold]{raleway}
+% \usepackage[default]{raleway}
+% \usepackage[sfdefault]{biolinum}
+\usepackage[sfdefault,light,semibold,lf]{FiraSans}
+% \usepackage[defaultfam,light,semibold,lining]{montserrat}
+% \usepackage[sfdefault]{roboto}
 
 %======== MARGIN ========
 \usepackage{geometry}
@@ -63,7 +67,7 @@
     
 \renewcommand{\headrulewidth}{0pt}	
 \fancyhf{}							
-\cfoot{\color{gray}Rover Resume -- Page \thepage{} of\enspace\totalpages}
+\cfoot{\color{gray}Rover Resume -- Page \thepage{} of \totalpages}
 
 \usepackage{xcolor}
 \usepackage{hyperref}
@@ -76,3 +80,6 @@
 \setlength{\parindent}{0pt}
 
 \pdfgentounicode=1
+
+\usepackage{multicol}
+\usepackage{fontawesome5}
