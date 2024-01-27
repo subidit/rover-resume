@@ -1,5 +1,8 @@
 # Rover Resume Template
 
+### Quick start
+[Edit on Overleaf.](https://www.overleaf.com/latex/templates/rover-resume/bpzqtssvfgsn)
+
 ## Preview
 
 | [![Base Rover](/images/base-rover.jpg)](/templates/base%20rover/base-rover.pdf) | [![Fancy Rover](/images/fancy-rover.jpg)](/templates/fancy%20rover/fancy-rover.pdf) | 
@@ -17,15 +20,32 @@
 - Choose a template.
 - Fill out your details.
 
-### Quick start
-[Edit on Overleaf.](https://www.overleaf.com/latex/templates/rover-resume/bpzqtssvfgsn)
-
 1. `\section` for Education, Experience, Certifications, Awards, Skills & Interests etc.
 2. Use `\subsection{}` and `\subsubsection` for primary and secondary titles like Institution Name, Position title, Duration etc.
 3. Use `\hfill` to right align text in the title.
 4. Use `itemize` lists for bullet points.
 
 Check [User Guide](user-guide.md) for more options.
+
+## Templates
+
+**Base Rover**: No custom commands. Easy to understand and customize. Plain and simple.
+
+**Fancy Rover**: Font specific commands for for different weights and sizes. `ifelse` for conditional vertical spacing.
+
+**Star Rover**: Separate `preamble.tex` file. Two custom commands- unit with three arguments `\uthree`, for single line headers, and `\ufour` for double line headers.
+
+```latex
+\uthree{<University/Company>}{<Degree/Designation>}{Duration}{
+  \item List one
+  \item List two etc
+}
+
+\ufour{<Organization>}{<Location>}{<Designation>}{<Duration>}{
+  \item List one
+  \item List two etc
+}
+```
 
 ## Support
 
@@ -37,31 +57,12 @@ Happy job hunting!
 
 ## Tips
 
-- Single column layout is the preffered choice of both recruiters and ATS.
+- Single column layout is the preferred choice of both recruiters and ATS.
 - Don't use graphs to show your skill levels as they don't really mean anything.
 - Good design is simple and effective. 
-- Information is king. Maintain hirarchy by repeating similar text blocks.
-- Make it easy for the recruter to skim the document and find the information he is looking for.
+- Information is king. Maintain hierarchy by repeating similar text blocks.
+- Make it easy for the recruiter to skim the document and find the information he is looking for.
 - You can use ChatGPT to give a job description and get related bullet points for your past experiences. 
-
-
-## Base Rover
-
-This template uses minimal customization commands. Use it as your starting point to understand how these templates are formatted. 
-
-
-## Fancy Rover
-
-This template has many bells and whistles for customization. This will show you how to customise various aspects of the document design. But remember don't go over-board with colours and fonts as too many cooks spoil the broth.  
-
-## Star Rover
-
-It uses two custom commands `\uthree` and `\ufour`. It also moves the preamble to another file. 
-
-## Milky Rover
-
-Based on (rather copied from) the [Butterick’s practical typography](https://practicaltypography.com/resumes.html) resume template. I used the same text to make it easier for comparison. Bigest hardle was to get a similar look without using the same fonts. Since I had to use only free fonts available with TeX installation, I had to adjust the letterspacing in rather hacky way. Anyway, I feel the end result looks pretty decent. 
-
 
 ## License
 

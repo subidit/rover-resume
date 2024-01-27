@@ -15,10 +15,11 @@
   \setlist[description]{itemsep=0pt}
 
 \usepackage{titlesec} 
+  \titlespacing{\section}{0pt}{*4}{*1.5}
   \titlespacing{\subsection}{0pt}{*0}{*0}
   \titlespacing{\subsubsection}{0pt}{*0}{*0}
   \titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule]
-  \titleformat{\subsection}{\large\bfseries\scshape}{}{}{}
+  \titleformat{\subsection}{\large\bfseries}{}{}{}
   \titleformat{\subsubsection}{\large\bfseries\itshape}{}{}{}
 
 
@@ -42,7 +43,7 @@
 
 \section{Education}
 %=================%
-\vspace{-1.5ex}
+% \vspace{-1.5ex}
 \subsection{University of Post Graduation \hfill City, State}
 \subsubsection{Degree Name \hfill Year}
 \begin{itemize}
@@ -53,7 +54,7 @@
 
 \section{Experience}
 %=================%
-\vspace{-1.5ex}
+% \vspace{-1.5ex}
 \subsection{Company ABC \hfill City, State (or Remote)}
 \subsubsection{Position Title \hfill  Month Year - Month Year}
 \begin{itemize}
@@ -74,7 +75,7 @@
 
 \section{Certification \& Awards}
 %===============================%
-\begin{enumerate}[itemsep=0pt]
+\begin{enumerate}
   \item [2023] Some programming bootcamp, Location.
   \item [2022] Forbes Top 15 Procrastinators under 15.
   \item [2021] Conducted workshop on family planning by abstainance in SomePlace.
@@ -82,7 +83,7 @@
 
 \section{Skills \& Interests}
 %===========================%
-\begin{description}%[nosep]
+\begin{description}
     \item[Technical] List computer software and programming languages 
     \item[Language] List foreign languages and your level of fluency
     \item[Laboratory] List scientific / research lab techniques or tools [If Applicable]

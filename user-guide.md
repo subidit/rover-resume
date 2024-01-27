@@ -1,3 +1,22 @@
+
+## Base Rover
+
+This template uses minimal customization commands. Use it as your starting point to understand how these templates are formatted. 
+
+
+## Fancy Rover
+
+This template has many bells and whistles for customization. This will show you how to customise various aspects of the document design. But remember don't go over-board with colours and fonts as too many cooks spoil the broth.  
+
+## Star Rover
+
+It uses two custom commands `\uthree` and `\ufour`. It also moves the preamble to another file. 
+
+## Milky Rover
+
+Based on (rather copied from) the [Butterick’s practical typography](https://practicaltypography.com/resumes.html) resume template. I used the same text to make it easier for comparison. Bigest hardle was to get a similar look without using the same fonts. Since I had to use only free fonts available with TeX installation, I had to adjust the letterspacing in rather hacky way. Anyway, I feel the end result looks pretty decent. 
+
+
 # Base 
 ```latex
 \usepackage[empty]{fullpage}
