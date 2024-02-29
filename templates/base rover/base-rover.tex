@@ -5,22 +5,22 @@
 
 \documentclass[11pt]{article} % fontsize 10pt/11pt/12pt
 
-\usepackage[margin=24mm, a4paper]{geometry}
+\usepackage[margin=1in, a4paper]{geometry}
 \pagestyle{empty} % remove page number
 \setcounter{secnumdepth}{0} % remove section numbering
 
 \usepackage{enumitem} % formatting list style
-  \setlist[itemize]{left=0pt..1.5em, noitemsep}
-	\setlist[enumerate]{align=left, itemsep=0pt}
-  \setlist[description]{itemsep=0pt}
+\setlist{noitemsep}
+\setlist[itemize]{left=0pt..1.5em}
+\setlist[enumerate]{align=left}
 
 \usepackage{titlesec} 
-	\titlespacing{\section}{0pt}{3ex}{1.5ex}
-	\titlespacing{\subsection}{0pt}{*0}{*0}
-	\titlespacing{\subsubsection}{0pt}{*0}{*0.5}
-  \titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule]
-  \titleformat{\subsection}{\large\bfseries}{}{}{}
-  \titleformat{\subsubsection}{\bfseries\itshape}{}{}{}
+\titlespacing{\section}{0pt}{4ex}{1ex}
+\titlespacing{\subsection}{0pt}{3ex}{*0}
+\titlespacing{\subsubsection}{0pt}{*0}{*0.5}
+\titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule]
+\titleformat{\subsection}{\large\bfseries}{}{}{}
+\titleformat{\subsubsection}{\bfseries\itshape}{}{}{}
 
 
 \begin{document}
