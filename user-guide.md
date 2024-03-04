@@ -1,3 +1,7 @@
+Your résumé is a single page document that highlights your achievements to potential employer. its sole purpose is to get you to the interview call. Since recruiters spent only few seconds on each résumé before piling it to either *move-forward* or *reject* pile, all your résumé needs to do is be concise, easy to skim over and fulfill all requirements. That's why LaTeX is a good option for this job. You put most of your effort in modifying your content according to the job requirements and let LaTeX handle the formatting. 
+
+You don't need a 400 lines long template to format your one pager. 
+
 
 ## Base Rover
 
