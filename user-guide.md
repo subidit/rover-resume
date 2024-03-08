@@ -2,6 +2,8 @@ Your résumé is a single page document that highlights your achievements to pot
 
 You don't need a 400 lines long template to format your one pager. 
 
+We can use standard LaTeX commands like `\section`, `\subsection` to format our experience, education etc. and for bullet points `\begin{itemize}...\end{itemize}` should suffice. We can use description lists for skills and bulleted lists or enumerated list for certifications, awards, leadership experience, publications etc. 
+
 
 ## Base Rover
 
