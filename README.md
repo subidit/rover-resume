@@ -1,5 +1,7 @@
 # Rover Resume Template
 
+Learn to format your résumé with very few LaTeX commands. 
+
 ### Quick start
 [Edit on Overleaf.](https://www.overleaf.com/latex/templates/rover-resume/bpzqtssvfgsn)
 
@@ -60,9 +62,10 @@ Happy job hunting!
 - Single column layout is the preferred choice of both recruiters and ATS.
 - Don't use graphs to show your skill levels as they don't really mean anything.
 - Good design is simple and effective. 
-- Information is king. Maintain hierarchy by repeating similar text blocks.
-- Make it easy for the recruiter to skim the document and find the information he is looking for.
-- You can use ChatGPT to give a job description and get related bullet points for your past experiences. 
+- Information is king. 
+- Maintain hierarchy by repeating similar text blocks.
+- Make it easy for the recruiter to skim the document and find the information they are looking for.
+- You can use ChatGPT for generating related bullet points of your past experiences.
 
 ## License
 
