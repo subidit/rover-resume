@@ -1,13 +1,18 @@
 <div align="center">
-
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="/images/Rover-black-bg.png">
     <img alt="Daytona logo" src="/images/Rover-white-bg.jpg" width="60%">
   </picture>
-
-  <h3>Streamlined Code, Endless Possibilities – Your Resume, Your Way</h3>
-
 </div>
+
+| [![Base Rover](/images/base-rover.jpg)](/templates/base%20rover/base-rover.pdf) | [![Fancy Rover](/images/fancy-rover.jpg)](/templates/fancy%20rover/fancy-rover.pdf) | 
+|:----:|:-----:|
+| Base Rover Template | Fancy Rover Template |
+
+| [![Milky Rover](/images/milky-rover.jpg)](/templates/milky%20rover/milky-rover.pdf) | [![Star Rover](/images/star-rover.jpg)](/templates/star%20rover/star-rover.pdf) | 
+|:----:| :----:|
+| [Milky Rover Template](https://github.com/subidit/rover-resume/tree/main/templates/milky%20rover) inspired from [Butterick’s practical typography](https://practicaltypography.com/resumes.html). | Star Rover Template |
+
 
 ## Features
 * **Simple LaTeX Code:** Utilizes straightforward LaTeX code for easy customization and understanding.
@@ -21,38 +26,25 @@
 ## Quick start
 [Edit on Overleaf.](https://www.overleaf.com/latex/templates/rover-resume/bpzqtssvfgsn)
 
-## Preview
-
-| [![Base Rover](/images/base-rover.jpg)](/templates/base%20rover/base-rover.pdf) | [![Fancy Rover](/images/fancy-rover.jpg)](/templates/fancy%20rover/fancy-rover.pdf) | 
-|:----:|:-----:|
-| Base Rover Template | Fancy Rover Template |
-
-| [![Milky Rover](/images/milky-rover.jpg)](/templates/milky%20rover/milky-rover.pdf) | [![Star Rover](/images/star-rover.jpg)](/templates/star%20rover/star-rover.pdf) | 
-|:----:| :----:|
-| [Milky Rover Template](https://github.com/subidit/rover-resume/tree/main/templates/milky%20rover) inspired from [Butterick’s practical typography](https://practicaltypography.com/resumes.html). | Star Rover Template |
-
-
 ## Getting Started
 1. **Get the Repository**: Star, Fork, or Download this repository to your local machine.   
 2. **Select a Template**: Choose a template from the available options.
 3. **Fill in Your Details**: Personalize the template by filling in your information.
 
 ### Tips for Using LaTeX Commands
-1. **Sectioning**: Use `\section` for major sections like Education, Experience, Certifications, Awards, Skills & Interests, etc.
-2. **Subsectioning**: Employ `\subsection{}` and `\subsubsection` for primary and secondary titles such as Institution Name, Position Title, Duration, etc.
-3. **Text Alignment**: Utilize `\hfill` to right-align text.
-4. **Bullet Points**: Use `itemize` lists for creating bullet points.
+- **Sectioning**: Use `\section` for major sections like Education, Experience, Certifications, Awards, Skills & Interests, etc.
+- **Subsectioning**: Employ `\subsection{}` and `\subsubsection` for primary and secondary titles such as Institution Name, Position Title, Duration, etc.
+- **Text Alignment**: Utilize `\hfill` to right-align dates etc.
+- **Bullet Points**: Use `itemize` lists for creating bullet points.
 
 ### Additional Options
 Refer to the [User Guide](user-guide.md) for more customization options and features.
 
 ## Templates
 
-**Base Rover**: A straightforward template without custom commands, easy to understand and customize. Offers a plain and simple design.
-
-**Fancy Rover**: Provides font-specific commands for different weights and sizes. Utilizes `ifelse` for conditional vertical spacing.
-
-**Star Rover**: Includes a separate `preamble.tex` file. Introduces two custom commands: `\uthree` for single-line headers and `\ufour` for double-line headers.
+- **Base Rover**: A straightforward template without custom commands, easy to understand and customize. Offers a plain and simple design.
+- **Fancy Rover**: Provides font-specific commands for different weights and sizes. Utilizes `ifelse` for conditional vertical spacing. 
+- **Star Rover**: Includes a separate `preamble.tex` file. Introduces two custom commands: `\uthree` for single-line headers and `\ufour` for double-line headers.
 
 ```latex
 \uthree{<University/Company>}{<Degree/Designation>}{Duration}{
