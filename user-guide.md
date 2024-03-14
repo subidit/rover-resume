@@ -4,6 +4,14 @@ You don't need a 400 lines long template to format your one pager.
 
 We can use standard LaTeX commands like `\section`, `\subsection` to format our experience, education etc. and for bullet points `\begin{itemize}...\end{itemize}` should suffice. We can use description lists for skills and bulleted lists or enumerated list for certifications, awards, leadership experience, publications etc. 
 
+## Tips
+1. **Stick to Single Column Layout**: Recruiters and ATS prefer resumes with a single column layout.
+2. **Avoid Skill Graphs**: Skill graphs are not meaningful. Instead, list your skills clearly.
+3. **Keep Design Simple**: Effective design is simple and easy to understand.
+4. **Focus on Information**: Your resume's content is crucial.
+5. **Maintain Consistency**: Repeat similar text blocks to maintain a clear hierarchy.
+6. **Facilitate Skimming**: Make it easy for recruiters to quickly find relevant information by using clear headings and bullet points.
+7. **Utilize ChatGPT for Bullet Points**: Use ChatGPT to generate bullet points for your past experiences, making them more relevant and engaging.
 
 ## Base Rover
 

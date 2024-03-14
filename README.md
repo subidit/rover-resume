@@ -1,15 +1,24 @@
 <div align="center">
+
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="/images/Rover-black-bg.png">
     <img alt="Daytona logo" src="/images/Rover-white-bg.jpg" width="60%">
   </picture>
+
+  <h3>Streamlined Code, Endless Possibilities – Your Resume, Your Way</h3>
+
 </div>
 
-# Rover Resume Template
+## Features
+* **Simple LaTeX Code:** Utilizes straightforward LaTeX code for easy customization and understanding.
+* **Multiple Themes:** Offers a variety of pre-designed themes for users to choose from, allowing for diverse resume styles.
+* **Design Best Practices:** Incorporates design principles and best practices to ensure professional and visually appealing resumes.
+* **Customization Options:** Provides flexibility for users to customize their resumes according to their preferences and needs.
+* **Modular Structure:** Organizes the codebase into modular components for easier maintenance and scalability.
+<!-- * **Documentation:** Includes comprehensive documentation with instructions on how to use the templates effectively.
+* **Community Support:** Offers a supportive community where users can seek help, share tips, and collaborate on improving the templates. -->
 
-Learn to format your résumé with very few LaTeX commands. 
-
-### Quick start
+## Quick start
 [Edit on Overleaf.](https://www.overleaf.com/latex/templates/rover-resume/bpzqtssvfgsn)
 
 ## Preview
@@ -23,26 +32,27 @@ Learn to format your résumé with very few LaTeX commands.
 | [Milky Rover Template](https://github.com/subidit/rover-resume/tree/main/templates/milky%20rover) inspired from [Butterick’s practical typography](https://practicaltypography.com/resumes.html). | Star Rover Template |
 
 
-## How to Use
+## Getting Started
+1. **Get the Repository**: Star, Fork, or Download this repository to your local machine.   
+2. **Select a Template**: Choose a template from the available options.
+3. **Fill in Your Details**: Personalize the template by filling in your information.
 
-- Fork or download this repository. 
-- Choose a template.
-- Fill out your details.
+### Tips for Using LaTeX Commands
+1. **Sectioning**: Use `\section` for major sections like Education, Experience, Certifications, Awards, Skills & Interests, etc.
+2. **Subsectioning**: Employ `\subsection{}` and `\subsubsection` for primary and secondary titles such as Institution Name, Position Title, Duration, etc.
+3. **Text Alignment**: Utilize `\hfill` to right-align text.
+4. **Bullet Points**: Use `itemize` lists for creating bullet points.
 
-1. `\section` for Education, Experience, Certifications, Awards, Skills & Interests etc.
-2. Use `\subsection{}` and `\subsubsection` for primary and secondary titles like Institution Name, Position title, Duration etc.
-3. Use `\hfill` to right align text in the title.
-4. Use `itemize` lists for bullet points.
-
-Check [User Guide](user-guide.md) for more options.
+### Additional Options
+Refer to the [User Guide](user-guide.md) for more customization options and features.
 
 ## Templates
 
-**Base Rover**: No custom commands. Easy to understand and customize. Plain and simple.
+**Base Rover**: A straightforward template without custom commands, easy to understand and customize. Offers a plain and simple design.
 
-**Fancy Rover**: Font specific commands for for different weights and sizes. `ifelse` for conditional vertical spacing.
+**Fancy Rover**: Provides font-specific commands for different weights and sizes. Utilizes `ifelse` for conditional vertical spacing.
 
-**Star Rover**: Separate `preamble.tex` file. Two custom commands- unit with three arguments `\uthree`, for single line headers, and `\ufour` for double line headers.
+**Star Rover**: Includes a separate `preamble.tex` file. Introduces two custom commands: `\uthree` for single-line headers and `\ufour` for double-line headers.
 
 ```latex
 \uthree{<University/Company>}{<Degree/Designation>}{Duration}{
@@ -58,21 +68,12 @@ Check [User Guide](user-guide.md) for more options.
 
 ## Support
 
-For inquiries or support, use the [Discussions](https://github.com/subidit/rover-resume/discussions) tab.
+For inquiries or assistance, visit the [Discussions](https://github.com/subidit/rover-resume/discussions) tab.
 
 Feel free to contribute to the project or provide feedback by opening an issue or submitting a pull request.
 
 Happy job hunting!
 
-## Tips
-
-- Single column layout is the preferred choice of both recruiters and ATS.
-- Don't use graphs to show your skill levels as they don't really mean anything.
-- Good design is simple and effective. 
-- Information is king. 
-- Maintain hierarchy by repeating similar text blocks.
-- Make it easy for the recruiter to skim the document and find the information they are looking for.
-- You can use ChatGPT for generating related bullet points of your past experiences.
 
 ## License
 
