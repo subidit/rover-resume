@@ -1,6 +1,6 @@
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="/images/Rover-black-bg.jpg">
+    <source media="(prefers-color-scheme: dark)" srcset="/images/Rover-black-bg.png">
     <img alt="Daytona logo" src="/images/Rover-white-bg.jpg" width="40%">
   </picture>
 </div>
