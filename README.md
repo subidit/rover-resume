@@ -1,3 +1,10 @@
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="/images/Rover-black-bg.jpg">
+    <img alt="Daytona logo" src="/images/Rover-white-bg.jpg" width="40%">
+  </picture>
+</div>
+
 # Rover Resume Template
 
 Learn to format your résumé with very few LaTeX commands. 
