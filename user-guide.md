@@ -25,6 +25,17 @@ This template has many bells and whistles for customization. This will show you 
 ## Star Rover
 
 It uses two custom commands `\uthree` and `\ufour`. It also moves the preamble to another file. 
+```latex
+\uthree{<University/Company>}{<Degree/Designation>}{Duration}{
+  \item List one
+  \item List two etc
+}
+
+\ufour{<Organization>}{<Location>}{<Designation>}{<Duration>}{
+  \item List one
+  \item List two etc
+}
+```
 
 ## Milky Rover
 
@@ -42,8 +53,8 @@ Based on (rather copied from) the [Butterick’s practical typography](https://p
   % \setlist{nosep}
 
 \usepackage{titlesec}
-  \titlespacing{\section}{0pt}{*4}{*2}
-  \titlespacing{\subsection}{0pt}{*3}{*0}
+  \titlespacing{\section}{0pt}{4ex}{1ex}
+  \titlespacing{\subsection}{0pt}{3ex}{*0}
   \titlespacing{\subsubsection}{0pt}{*0}{*0.5}
   \titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule]
   \titleformat{\subsection}{\large\bfseries\scshape}{}{}{}

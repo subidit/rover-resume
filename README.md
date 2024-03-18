@@ -11,7 +11,7 @@
 
 | [![Milky Rover](/images/milky-rover.jpg)](/templates/milky%20rover/) | [![Star Rover](/images/star-rover.jpg)](/templates/star%20rover/) | 
 |:----:| :----:|
-| [Milky Rover Template](/templates/milky%20rover) inspired from [Butterick’s practical typography](https://practicaltypography.com/resumes.html). | Star Rover Template |
+| Recreation of [Butterick’s practical typography](https://practicaltypography.com/resumes.html). | Star Rover Template |
 
 
 ## Features
