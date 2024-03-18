@@ -5,13 +5,13 @@
   </picture>
 </div>
 
-| [![Base Rover](/images/base-rover.jpg)](/templates/base%20rover/base-rover.pdf) | [![Fancy Rover](/images/fancy-rover.jpg)](/templates/fancy%20rover/fancy-rover.pdf) | 
+| [![Base Rover](/images/base-rover.jpg)](/templates/base%20rover/) | [![Fancy Rover](/images/fancy-rover.jpg)](/templates/fancy%20rover/) | 
 |:----:|:-----:|
 | Base Rover Template | Fancy Rover Template |
 
-| [![Milky Rover](/images/milky-rover.jpg)](/templates/milky%20rover/milky-rover.pdf) | [![Star Rover](/images/star-rover.jpg)](/templates/star%20rover/star-rover.pdf) | 
+| [![Milky Rover](/images/milky-rover.jpg)](/templates/milky%20rover/) | [![Star Rover](/images/star-rover.jpg)](/templates/star%20rover/) | 
 |:----:| :----:|
-| [Milky Rover Template](https://github.com/subidit/rover-resume/tree/main/templates/milky%20rover) inspired from [Butterick’s practical typography](https://practicaltypography.com/resumes.html). | Star Rover Template |
+| [Milky Rover Template](/templates/milky%20rover) inspired from [Butterick’s practical typography](https://practicaltypography.com/resumes.html). | Star Rover Template |
 
 
 ## Features
@@ -19,7 +19,7 @@
 * **Multiple Themes:** Offers a variety of pre-designed themes for users to choose from, allowing for diverse resume styles.
 * **Design Best Practices:** Incorporates design principles and best practices to ensure professional and visually appealing resumes.
 * **Customization Options:** Provides flexibility for users to customize their resumes according to their preferences and needs.
-* **Modular Structure:** Organizes the codebase into modular components for easier maintenance and scalability.
+* **Modular Structure:** Organizes the codebase into modular components for easier maintenance and scalability. 
 <!-- * **Documentation:** Includes comprehensive documentation with instructions on how to use the templates effectively.
 * **Community Support:** Offers a supportive community where users can seek help, share tips, and collaborate on improving the templates. -->
 
@@ -46,17 +46,6 @@ Refer to the [User Guide](user-guide.md) for more customization options and feat
 - **Fancy Rover**: Provides font-specific commands for different weights and sizes. Utilizes `ifelse` for conditional vertical spacing. 
 - **Star Rover**: Includes a separate `preamble.tex` file. Introduces two custom commands: `\uthree` for single-line headers and `\ufour` for double-line headers.
 
-```latex
-\uthree{<University/Company>}{<Degree/Designation>}{Duration}{
-  \item List one
-  \item List two etc
-}
-
-\ufour{<Organization>}{<Location>}{<Designation>}{<Duration>}{
-  \item List one
-  \item List two etc
-}
-```
 
 ## Support
 
