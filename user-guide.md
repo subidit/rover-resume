@@ -64,8 +64,9 @@ Based on (rather copied from) the [Butterick’s practical typography](https://p
 # Headers
 
 ## Basic Centered
-This is the most versatile implimentation with no requiremt of any other packages and also looks balanced in most cases.
-```tex
+This is the most versatile implementation with no requirement of any other packages and also looks balanced in most cases.
+
+```latex
 \begin{center}
     {\huge\bfseries\uppercase{Rover Résumé}\par}
     \medskip
@@ -76,7 +77,7 @@ This is the most versatile implimentation with no requiremt of any other package
 ```
 
 ## Centered with Icons & Colour
-```tex
+```latex
 \usepackage[dvipsnames]{xcolor}
 \usepackage{fontawesome5}
 %=== \begin{document}
@@ -93,7 +94,7 @@ This is the most versatile implimentation with no requiremt of any other package
 ```
 
 ## Minipage
-```tex
+```latex
 \begin{center}
     \begin{minipage}{0.5\textwidth}
         {\LARGE \bfseries Rover Résumé} \\
@@ -109,7 +110,7 @@ This is the most versatile implimentation with no requiremt of any other package
 ```
 
 ## 3 columns with `multicol`
-```tex
+```latex
 \usepackage{multicol}
 %=== \begin{document}
 \begin{multicols}{3}
@@ -132,7 +133,7 @@ This is the most versatile implimentation with no requiremt of any other package
 ```
 
 ## Multicolumns with minipages
-```tex
+```latex
 \usepackage{fontawesome5}
 \usepackage{xcolor}
 %=== \begin{document}
@@ -155,7 +156,7 @@ This is the most versatile implimentation with no requiremt of any other package
 ```
 
 ## 3 columns with packages
-```tex
+```latex
 \usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{fontawesome5}
@@ -215,24 +216,24 @@ Extensions provided by enumitem:
 ### Some common settings
 To remove the vertical space altogether in a list:
 
-```tex
+```latex
 \begin{enumerate}[nosep]
 ```
 
 To remove the vertical space altogether in all lists: 
 
-```tex
+```latex
 \setlist{nosep}
 ```
 
 To start the label at the margin and the item text at the current parindent:
 
-```tex
+```latex
 \begin{enumerate}[left=0pt .. \parindent]
 ```
 
 ### Horizontal spacing of labels
-```
+```latex
 \leftmargin + \itemindent = 
 \labelindent + \labelwidth + \labelsep
 ```
@@ -251,7 +252,7 @@ To start the label at the margin and the item text at the current parindent:
 # Package Options
 
 `titlesec` package gives us the following commands to control the formatting and spacing of titles.
-```
+```latex
 \usepackage{titlesec}
 \titleformat{<command>}[<shape>]{<format>}{<label>}{<sec>}{<before-code>}[<after-code>]  
 \titlespacing{command}{left spacing}{before spacing}{after spacing}[right]
