@@ -319,3 +319,59 @@ Since we have already removed the section numberings with `\setcounter{secnumdep
 | `bookmarksnumbered` | Number the bookmarks (true or false)      |
 | `pdfstartview`      | Initial view of PDF document              |
 | `pdfpagemode`       | Page view on opening the PDF              |
+
+
+# SNIPPETS
+
+### Horizontal rule at half X-height
+
+```latex
+\setcounter{secnumdepth}{0}
+
+\usepackage{xhfill}
+\newcommand{\ruleafter}[1]{\par\noindent\xrfill[.5ex]{1pt}[gray]~#1~\xrfill[.5ex]{1pt}[gray]}
+
+
+\usepackage{titlesec}
+\titleformat{\section}
+  {\large\bfseries\uppercase}
+  {}
+  {0pt}
+  {\ruleafter}
+```
+
+
+### Color first the letters red
+
+```latex
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{titlesec}
+
+\makeatletter
+\newcommand{\coloredsection}[1]{%
+  \def\@tempa{#1}%
+  \textcolor{red}{\expandafter\@firstthree\@tempa\@nil}%
+  \expandafter\@removeFirstThree\@tempa\@nil
+}
+
+\def\@firstthree#1#2#3#4\@nil{#1#2#3}
+\def\@removeFirstThree#1#2#3#4\@nil{#4}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries}
+  {}
+  {0pt}
+  {\coloredsection}
+
+\setcounter{secnumdepth}{0}
+\begin{document}
+
+\section{Introduction}
+This is the introduction section.
+
+\section{Methodology}
+This is the methodology section.
+
+\end{document}
+```
