@@ -68,11 +68,11 @@ This is the most versatile implementation with no requirement of any other packa
 
 ```latex
 \begin{center}
-    {\huge\bfseries\uppercase{Rover Résumé}\par}
-    \medskip
-    Address Line 1, City, State $|$ 
-    email@example.com $|$ 
-    phone: (123) 456 7890 
+  {\huge\bfseries\uppercase{Rover Résumé}\par}
+  \medskip
+  Address Line 1, City, State $|$ 
+  email@example.com $|$ 
+  phone: (123) 456 7890 
 \end{center}
 ```
 
@@ -82,30 +82,30 @@ This is the most versatile implementation with no requirement of any other packa
 \usepackage{fontawesome5}
 %=== \begin{document}
 \begin{center}
-    {\color{Sepia}\huge\bfseries 
-        Rover Résumé 
-    \par}
-    \medskip
-    \faEnvelope\ email $|$  
-    \faMobile\ phone $|$ 
-    \faLinkedin LinkedIn.com/username $|$ 
-    \faGithub GitHub.com/username 
+  {\color{Sepia}\huge\bfseries 
+      Rover Résumé 
+  \par}
+  \medskip
+  \faEnvelope\ email $|$  
+  \faMobile\ phone $|$ 
+  \faLinkedin LinkedIn.com/username $|$ 
+  \faGithub GitHub.com/username 
 \end{center}
 ```
 
 ## Minipage
 ```latex
 \begin{center}
-    \begin{minipage}{0.5\textwidth}
-        {\LARGE \bfseries Rover Résumé} \\
-        Something Engineer
-    \end{minipage} \hfill 
-    \begin{minipage}{0.4\textwidth}
-      \raggedleft
-        address \\
-        email \\
-        phone
-    \end{minipage}
+  \begin{minipage}{0.5\textwidth}
+      {\LARGE \bfseries Rover Résumé} \\
+      Something Engineer
+  \end{minipage} \hfill 
+  \begin{minipage}{0.4\textwidth}
+    \raggedleft
+      address \\
+      email \\
+      phone
+  \end{minipage}
 \end{center}
 ```
 
@@ -115,19 +115,19 @@ This is the most versatile implementation with no requirement of any other packa
 %=== \begin{document}
 \begin{multicols}{3}
     
-    \noindent
-    address line 1 \\
-    address line 2 \\
-    City, State 
-    \columnbreak
+  \noindent
+  address line 1 \\
+  address line 2 \\
+  City, State 
+  \columnbreak
 
-    {\centering\Large\bfseries\uppercase{Rover Résumé}} 
-    \columnbreak
+  {\centering\Large\bfseries\uppercase{Rover Résumé}} 
+  \columnbreak
 
-    \raggedleft
-    Email \\
-    Mobile \\
-    LinkedIn
+  \raggedleft
+  Email \\
+  Mobile \\
+  LinkedIn
 
 \end{multicols}
 ```
@@ -167,20 +167,107 @@ This is the most versatile implementation with no requirement of any other packa
     {\textcolor{gray}{\faGithub}} \href{https://github.com/yourusername}{yourusername}\par
   \end{flushleft}
   
-    \columnbreak
+  \columnbreak
 
-    \begin{center}
-        {\huge\textsf{\textbf{Bold Sans Serif}}} \par
-        1 infinite loop, Menlo Park, CA \par
-    \end{center}
+  \begin{center}
+    {\huge\textsf{\textbf{Bold Sans Serif}}} \par
+    1 infinite loop, Menlo Park, CA \par
+  \end{center}
 
-    \columnbreak
+  \columnbreak
 
-    \begin{flushright}
-        \textcolor{gray}{\faMobile} \texttt{(123) 456-7890} \\
-        \textcolor{gray}{\faEnvelope} \href{mailto:youremail@example.com}{email@example.com}\par
-    \end{flushright}
+  \begin{flushright}
+    \textcolor{gray}{\faMobile} \texttt{(123) 456-7890} \\
+    \textcolor{gray}{\faEnvelope} \href{mailto:youremail@example.com}{email@example.com}\par
+  \end{flushright}
+
 \end{multicols}
+```
+
+
+## Horizontal rule at half X-height
+
+```latex
+\setcounter{secnumdepth}{0}
+
+\usepackage{xhfill}
+\newcommand{\ruleafter}[1]{\par\noindent\xrfill[.5ex]{1pt}[gray]~#1~\xrfill[.5ex]{1pt}[gray]}
+
+
+\usepackage{titlesec}
+\titleformat{\section}
+  {\large\bfseries\uppercase}
+  {}
+  {0pt}
+  {\ruleafter}
+```
+
+
+## Color first the letters red
+
+```latex
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{titlesec}
+
+\makeatletter
+\newcommand{\coloredsection}[1]{%
+  \def\@tempa{#1}%
+  \textcolor{red}{\expandafter\@firstthree\@tempa\@nil}%
+  \expandafter\@removeFirstThree\@tempa\@nil
+}
+
+\def\@firstthree#1#2#3#4\@nil{#1#2#3}
+\def\@removeFirstThree#1#2#3#4\@nil{#4}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries}
+  {}
+  {0pt}
+  {\coloredsection}
+
+\setcounter{secnumdepth}{0}
+\begin{document}
+
+\section{Introduction}
+This is the introduction section.
+
+\section{Methodology}
+This is the methodology section.
+
+\end{document}
+```
+
+## Show page number if more than one page
+
+```latex
+\usepackage[page]{totalcount}
+\usepackage{fancyhdr}
+\usepackage{ifthen}
+
+\AtBeginDocument{
+  \ifthenelse{\totalpages>1}
+  {\pagestyle{fancy}} 
+  {\pagestyle{empty}} % no page number if only one page
+}
+    
+\renewcommand{\headrulewidth}{0pt}	
+\fancyhf{}							
+\cfoot{\color{gray}Rover Resume -- Page \thepage{} of \totalpages}
+```
+
+## Remove vertical spacing conditionally
+
+```latex
+\newif\ifRemVS % remove vspace between \section & \subsection
+\newcommand{\rvs}{
+  \ifRemVS
+    \vspace{-1.5ex}
+  \fi
+    \global\RemVSfalse
+}
+
+\titleformat{\section}{\Large\bfseries}{}{}{}[\global\RemVStrue]
 ```
 
 # Lists
@@ -238,7 +325,7 @@ To start the label at the margin and the item text at the current parindent:
 \labelindent + \labelwidth + \labelsep
 ```
 
-
+<!-- 
 # Titles
 
 ## Commands Usage
@@ -320,58 +407,5 @@ Since we have already removed the section numberings with `\setcounter{secnumdep
 | `pdfstartview`      | Initial view of PDF document              |
 | `pdfpagemode`       | Page view on opening the PDF              |
 
+-->
 
-# SNIPPETS
-
-### Horizontal rule at half X-height
-
-```latex
-\setcounter{secnumdepth}{0}
-
-\usepackage{xhfill}
-\newcommand{\ruleafter}[1]{\par\noindent\xrfill[.5ex]{1pt}[gray]~#1~\xrfill[.5ex]{1pt}[gray]}
-
-
-\usepackage{titlesec}
-\titleformat{\section}
-  {\large\bfseries\uppercase}
-  {}
-  {0pt}
-  {\ruleafter}
-```
-
-
-### Color first the letters red
-
-```latex
-\documentclass{article}
-\usepackage{xcolor}
-\usepackage{titlesec}
-
-\makeatletter
-\newcommand{\coloredsection}[1]{%
-  \def\@tempa{#1}%
-  \textcolor{red}{\expandafter\@firstthree\@tempa\@nil}%
-  \expandafter\@removeFirstThree\@tempa\@nil
-}
-
-\def\@firstthree#1#2#3#4\@nil{#1#2#3}
-\def\@removeFirstThree#1#2#3#4\@nil{#4}
-
-\titleformat{\section}
-  {\normalfont\Large\bfseries}
-  {}
-  {0pt}
-  {\coloredsection}
-
-\setcounter{secnumdepth}{0}
-\begin{document}
-
-\section{Introduction}
-This is the introduction section.
-
-\section{Methodology}
-This is the methodology section.
-
-\end{document}
-```
