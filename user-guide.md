@@ -109,6 +109,25 @@ This is the most versatile implementation with no requirement of any other packa
 \end{center}
 ```
 
+## Image or Logo
+```latex
+\usepackage{graphicx}
+%=== \begin{document}
+\begin{minipage}{0.2\textwidth}
+  \includegraphics[width=\textwidth]{image.jpg}
+\end{minipage} % \hfill undesirable here
+\begin{minipage}[c]{0.3\textwidth}
+  \raggedleft % to look centered
+  {\Large\bfseries First Lastname} 
+\end{minipage} \hfill
+\begin{minipage}{0.4\textwidth}
+  \raggedleft
+  email@gmail.com \\
+  123 456 7890 \\
+  github.com/user
+\end{minipage} 
+```
+
 ## 3 columns with `multicol`
 ```latex
 \usepackage{multicol}
