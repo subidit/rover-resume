@@ -5,9 +5,9 @@
   </picture>
 </div>
 
-This repository provides a simple yet effective CV template using basic LaTeX commands. Since LaTeX is a powerful typesetting system, it applies good formatting decisions by default - something that can be lost when using a custom class or commands. For instance, the template ensures that section and subsection headings are not left stranded at the bottom of a page, which is a common typesetting best practice.
+This repository provides a simple yet effective CV template using basic LaTeX commands. The BASE ROVER template requires only about 10 lines of code to set up a clean résumé format. This should give you a solid foundation to build upon and customize as needed.
 
-The BASE ROVER template requires only about 10 lines of code to set up a clean résumé format. This should give you a solid foundation to build upon and customize as needed. One of the benefits of this approach is that all the formatting commands remain accessible to the user. This means you can leverage standard LaTeX markup to fine-tune any part of your CV according to your preferences.
+To maintain ATS (Applicant Tracking System) compatibility, all templates in this repository are designed as single-column layouts. Additionally, standard LaTeX commands are used to preserve a clear hierarchical structure within the résumé, making it easy for recruiters to skim and quickly identify key information.
 
 If you have any questions about using this template or formatting your résumé, please feel free to post them in the [Discussions](https://github.com/subidit/rover-resume/discussions) section. And don't forget to star the repository if you find it useful! 🌟
 
