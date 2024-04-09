@@ -5,20 +5,32 @@
   </picture>
 </div>
 
+This repository provides a simple yet effective CV template using basic LaTeX commands. Since LaTeX is a powerful typesetting system, it applies good formatting decisions by default - something that can be lost when using a custom class or commands. For instance, the template ensures that section and subsection headings are not left stranded at the bottom of a page, which is a common typesetting best practice.
+
+The BASE ROVER template requires only about 10 lines of code to set up a clean résumé format. This should give you a solid foundation to build upon and customize as needed. One of the benefits of this approach is that all the formatting commands remain accessible to the user. This means you can leverage standard LaTeX markup to fine-tune any part of your CV according to your preferences.
+
+If you have any questions about using this template or formatting your résumé, please feel free to post them in the [Discussions](https://github.com/subidit/rover-resume/discussions) section. And don't forget to star the repository if you find it useful! 🌟
+
+### Additional Options
+Refer to the [User Guide](user-guide.md) for more customization options and features.
+
+## Screenshots
+
 | [![Base Rover](/images/base-rover.jpg)](/templates/base%20rover/) | [![Fancy Rover](/images/fancy-rover.jpg)](/templates/fancy%20rover/) | 
 |:----:|:-----:|
 | Base Rover Template | Fancy Rover Template |
 
 | [![Milky Rover](/images/milky-rover.jpg)](/templates/milky%20rover/) | [![Star Rover](/images/star-rover.jpg)](/templates/star%20rover/) | 
-|:----:| :----:|
-| Recreation of [Butterick’s practical typography](https://practicaltypography.com/resumes.html). | Star Rover Template |
+|:----:|:-----:|
+| Milky Rover Template | Star Rover Template |
 
+*Milky Rover Template is a recreation of [Butterick’s practical typography](https://practicaltypography.com/resumes.html) résumé template.
 
 ## Features
 * **Simple LaTeX Code:** Utilizes straightforward LaTeX code for easy customization and understanding.
-* **Multiple Themes:** Offers a variety of pre-designed themes for users to choose from, allowing for diverse resume styles.
-* **Design Best Practices:** Incorporates design principles and best practices to ensure professional and visually appealing resumes.
-* **Customization Options:** Provides flexibility for users to customize their resumes according to their preferences and needs.
+* **Multiple Themes:** Offers a variety of pre-designed themes for users to choose from, allowing for diverse résumé styles.
+* **Design Best Practices:** Incorporates design principles and best practices to ensure professional and visually appealing résumés.
+* **Customization Options:** Provides flexibility for users to customize their résumés according to their preferences and needs.
 * **Modular Structure:** Organizes the codebase into modular components for easier maintenance and scalability. 
 <!-- * **Documentation:** Includes comprehensive documentation with instructions on how to use the templates effectively.
 * **Community Support:** Offers a supportive community where users can seek help, share tips, and collaborate on improving the templates. -->
@@ -27,7 +39,7 @@
 [Edit on Overleaf.](https://www.overleaf.com/latex/templates/rover-resume/bpzqtssvfgsn)
 
 ## Getting Started
-1. **Get the Repository**: Star, Fork, or Download this repository to your local machine.   
+1. **Get the Repository**: Fork or Download this repository to your local machine.   
 2. **Select a Template**: Choose a template from the available options.
 3. **Fill in Your Details**: Personalize the template by filling in your information.
 
@@ -37,8 +49,7 @@
 - **Text Alignment**: Utilize `\hfill` to right-align dates etc.
 - **Bullet Points**: Use `itemize` lists for creating bullet points.
 
-### Additional Options
-Refer to the [User Guide](user-guide.md) for more customization options and features.
+
 
 ## Templates
 
