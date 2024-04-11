@@ -36,7 +36,7 @@ Refer to the [User Guide](user-guide.md) for more customization options and feat
 * **Community Support:** Offers a supportive community where users can seek help, share tips, and collaborate on improving the templates. -->
 
 ## Quick start
-[Edit on Overleaf.](https://www.overleaf.com/latex/templates/rover-resume/bpzqtssvfgsn)
+[Edit on Overleaf](https://www.overleaf.com/latex/templates/rover-resume/bpzqtssvfgsn). Or just copy paste the code into your favorite LaTeX editor.
 
 ## Getting Started
 1. **Get the Repository**: Fork or Download this repository to your local machine.   
