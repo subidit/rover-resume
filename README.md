@@ -1,7 +1,7 @@
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="/images/Rover-black-bg.png">
-    <img alt="Daytona logo" src="/images/Rover-white-bg.jpg" width="60%">
+    <source media="(prefers-color-scheme: dark)" srcset="/img/Rover-black-bg.png">
+    <img alt="Daytona logo" src="/img/Rover-white-bg.jpg" width="60%">
   </picture>
 </div>
 
@@ -12,15 +12,15 @@ To maintain ATS (Applicant Tracking System) compatibility, all templates in this
 If you have any questions about using this template or formatting your résumé, please feel free to post them in the [Discussions](https://github.com/subidit/rover-resume/discussions) section. And don't forget to star the repository if you find it useful! 🌟
 
 ### Additional Options
-Refer to the [User Guide](user-guide.md) for more customization options and features.
+Refer to the [User Guide](/guides/user-guide.md) for more customization options and features.
 
 ## Screenshots
 
-| [![Base Rover](/images/base-rover.jpg)](/templates/base%20rover/) | [![Fancy Rover](/images/fancy-rover.jpg)](/templates/fancy%20rover/) | 
+| [![Base Rover](/img/base-rover.jpg)](/templates/base%20rover/) | [![Fancy Rover](/img/fancy-rover.jpg)](/templates/fancy%20rover/) | 
 |:----:|:-----:|
 | Base Rover Template | Fancy Rover Template |
 
-| [![Milky Rover](/images/milky-rover.jpg)](/templates/milky%20rover/) | [![Star Rover](/images/star-rover.jpg)](/templates/star%20rover/) | 
+| [![Milky Rover](/img/milky-rover.jpg)](/templates/milky%20rover/) | [![Star Rover](/img/star-rover.jpg)](/templates/star%20rover/) | 
 |:----:|:-----:|
 | Milky Rover Template | Star Rover Template |
 
