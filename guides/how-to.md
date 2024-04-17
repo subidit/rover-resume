@@ -1,4 +1,5 @@
 ## Contents <!-- omit from toc -->
+- [Typographic Guidelines](#typographic-guidelines)
 - [How to select fonts](#how-to-select-fonts)
 - [How to format lists](#how-to-format-lists)
 - [How to format title headers](#how-to-format-title-headers)
@@ -8,6 +9,18 @@
 - [How to adjust spacing](#how-to-adjust-spacing)
 - [How to add image, icon and color](#how-to-add-image-icon-and-color)
 
+## Typographic Guidelines
+
+1. Don’t use multiple typefaces. Use variations.
+2. Don’t use colours. Use gray instead.
+3. Don’t combine more than two of the above.
+4. Don’t combine bold and italic.
+5. Don’t underline.
+6. Don’t Title Case small caps.
+7. Don’t put period(.) in MMM YYYY 
+8. It’s fine to make the point size bigger, but just a little. 
+9. Use — **point size, bold, italic, small caps**
+10. Sans serifs usually don't have real italics or small caps. 
 
 ## How to select fonts
 
@@ -39,7 +52,26 @@ We use the `enumitem` package to format lists. There are three basic list enviro
 
 Formatting wise we want to decrease the line spacing between list items and align it with the margin. You can provide the formatting commands both locally or globally with a `<key>=<value>` syntax. To remove the vertical space altogether in all lists: `\setlist{nosep}` and to remove only the vertical spacing between list items use `noitemsep`. `itemsep=0pt` provides slightly more spacing. 
 
-Typical setting for resume would be: `\setlist[itemize]{left= 0pt .. 1.5em, noitemsep}`
+Typical setting for resume would be: `\setlist[itemize]{left= 0pt .. 1.5em, noitemsep}`. 1.5em is the default \parindent value. 
+
+`\begin{description}[leftmargin=2.5cm, style=nextline]` - to align items in description list.
+
+`\begin{enumerate}[label=\null, left=0pt..0pt, itemsep=0pt]` - for list without bullets. Could be used for Awards or Certification section with \hfill to right align years.
+
+```latex
+\begin{enumerate}[label=\null, left=0pt..0pt, itemsep=0pt]
+  \item Some programming bootcamp, Location. \hfill 2023
+  \item Forbes Top 15 Procrastinators under 15. \hfill 2022
+  \item Perticipation award for attending workshop. \hfill 2021
+\end{enumerate}
+
+\begin{description}
+	\item [2023] Some programming bootcamp, Location.
+	\item [2022] Forbes Top 15 Procrastinators under 15.
+	\item [2021] Conducted workshop on family planning by abstainance in SomePlace.
+\end{description}
+```
+Description list could be used to make years in bold.
 
 ## How to format title headers
 

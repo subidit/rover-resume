@@ -42,23 +42,18 @@ It uses two custom commands `\uthree` and `\ufour`. It also moves the preamble t
 Based on (rather copied from) the [Butterick’s practical typography](https://practicaltypography.com/resumes.html) resume template. I used the same text to make it easier for comparison. Bigest hardle was to get a similar look without using the same fonts. Since I had to use only free fonts available with TeX installation, I had to adjust the letterspacing in rather hacky way. Anyway, I feel the end result looks pretty decent. 
 
 
-# Base 
+# Minimum Working Code
 ```latex
-\usepackage[empty]{fullpage}
+\usepackage[margin=1in, a4paper]{geometry} 
 \setcounter{secnumdepth}{0} % remove section numbering
-
-\usepackage{enumitem} % formatting list style
-  \setlist[itemize]{left=0pt..1.5em}
-  \setlist{itemsep=0pt, align=left}
-  % \setlist{nosep}
-
 \usepackage{titlesec}
-  \titlespacing{\section}{0pt}{4ex}{1ex}
-  \titlespacing{\subsection}{0pt}{3ex}{*0}
-  \titlespacing{\subsubsection}{0pt}{*0}{*0.5}
-  \titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule]
-  \titleformat{\subsection}{\large\bfseries\scshape}{}{}{}
-  \titleformat{\subsubsection}{\large\bfseries\itshape}{}{}{}
+\titlespacing{\subsection}{0pt}{0pt}{0pt} % remove space above and below
+\titlespacing{\subsubsection}{0pt}{0pt}{0pt}
+\titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule]
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, left=0pt..\parindent} % compact and align bulleted lists
+\pagestyle{empty} % remove page number
+\pdfgentounicode=1 % make ATS friendly
 ```
 
 # Headers
@@ -68,11 +63,11 @@ This is the most versatile implementation with no requirement of any other packa
 
 ```latex
 \begin{center}
-  {\huge\bfseries\uppercase{Rover Résumé}\par}
-  \medskip
+  {\huge\bfseries Rover Résumé} \par\medskip
+  
   Address Line 1, City, State $|$ 
-  email@example.com $|$ 
-  phone: (123) 456 7890 
+  (123) 456 7890 $|$ 
+  email@example.com 
 \end{center}
 ```
 
@@ -229,33 +224,34 @@ This is the most versatile implementation with no requirement of any other packa
 \usepackage{xcolor}
 \usepackage{titlesec}
 
+\setcounter{secnumdepth}{0}
+
 \makeatletter
 \newcommand{\coloredsection}[1]{%
-  \def\@tempa{#1}%
-  \textcolor{red}{\expandafter\@firstthree\@tempa\@nil}%
-  \expandafter\@removeFirstThree\@tempa\@nil
+  \def\sectionTitle{#1}%
+  \textcolor{red}{\expandafter\extractFirstThree\sectionTitle\@nil}%
+  \expandafter\removeFirstThree\sectionTitle\@nil%
+  \space\hrulefill
 }
-
-\def\@firstthree#1#2#3#4\@nil{#1#2#3}
-\def\@removeFirstThree#1#2#3#4\@nil{#4}
+\def\extractFirstThree#1#2#3#4\@nil{#1#2#3}
+\def\removeFirstThree#1#2#3#4\@nil{#4}
+\makeatother
 
 \titleformat{\section}
-  {\normalfont\Large\bfseries}
-  {}
-  {0pt}
-  {\coloredsection}
+  {\Large\bfseries}{}{}
+{\coloredsection}
 
-\setcounter{secnumdepth}{0}
 \begin{document}
 
-\section{Introduction}
-This is the introduction section.
+\section{This is the first section}
+Section content goes here.
 
-\section{Methodology}
-This is the methodology section.
+\section{Another section}
+Section content goes here.
 
 \end{document}
 ```
+Or you can just `\section{\textcolor{red}{Edu}cation}`
 
 ## Show page number if more than one page
 
@@ -274,6 +270,7 @@ This is the methodology section.
 \fancyhf{}							
 \cfoot{\color{gray}Rover Resume -- Page \thepage{} of \totalpages}
 ```
+Or if your CV is a single pager then just use `\pagestyle{empty}` and if you need footer then use the `\cfoot`, avoid the whole `\ifthenelse` part.
 
 ## Remove vertical spacing conditionally
 
