@@ -13,14 +13,13 @@
 
 1. Don’t use multiple typefaces. Use variations.
 2. Don’t use colours. Use gray instead.
-3. Don’t combine more than two of the above.
-4. Don’t combine bold and italic.
-5. Don’t underline.
-6. Don’t Title Case small caps.
-7. Don’t put period(.) in MMM YYYY 
-8. It’s fine to make the point size bigger, but just a little. 
-9. Use — **point size, bold, italic, small caps**
-10. Sans serifs usually don't have real italics or small caps. 
+3. Don’t combine bold and italic.
+4. Don’t underline.
+5. Don’t Title Case small caps.
+6. Don’t put period(.) in MMM YYYY 
+7. It’s fine to make the point size bigger, but just a little. 
+8. Use **point size**, **bold**, and **ALL CAPS** for hirarchy.
+9. Sans serifs usually don't have real italics or small caps. 
 
 ## How to select fonts
 

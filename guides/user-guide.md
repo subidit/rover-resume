@@ -1,3 +1,18 @@
+# Minimum Working Code
+
+```latex
+\usepackage[margin=1in, a4paper]{geometry} 
+\setcounter{secnumdepth}{0} % remove section numbering
+\usepackage{titlesec}
+\titlespacing{\subsection}{0pt}{0pt}{0pt} % remove space above and below
+\titlespacing{\subsubsection}{0pt}{0pt}{0pt}
+\titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule] % format headers
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, left=0pt..\parindent} % compact bulleted lists
+\pagestyle{empty} % remove page number
+\pdfgentounicode=1 % make ATS friendly
+```
+
 Your résumé is a single page document that highlights your achievements to potential employer. its sole purpose is to get you to the interview call. Since recruiters spent only few seconds on each résumé before piling it to either *move-forward* or *reject* pile, all your résumé needs to do is be concise, easy to skim over and fulfill all requirements. That's why LaTeX is a good option for this job. You put most of your effort in modifying your content according to the job requirements and let LaTeX handle the formatting. 
 
 You don't need a 400 lines long template to format your one pager. 
@@ -41,20 +56,6 @@ It uses two custom commands `\uthree` and `\ufour`. It also moves the preamble t
 
 Based on (rather copied from) the [Butterick’s practical typography](https://practicaltypography.com/resumes.html) resume template. I used the same text to make it easier for comparison. Bigest hardle was to get a similar look without using the same fonts. Since I had to use only free fonts available with TeX installation, I had to adjust the letterspacing in rather hacky way. Anyway, I feel the end result looks pretty decent. 
 
-
-# Minimum Working Code
-```latex
-\usepackage[margin=1in, a4paper]{geometry} 
-\setcounter{secnumdepth}{0} % remove section numbering
-\usepackage{titlesec}
-\titlespacing{\subsection}{0pt}{0pt}{0pt} % remove space above and below
-\titlespacing{\subsubsection}{0pt}{0pt}{0pt}
-\titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule]
-\usepackage{enumitem}
-\setlist[itemize]{noitemsep, left=0pt..\parindent} % compact and align bulleted lists
-\pagestyle{empty} % remove page number
-\pdfgentounicode=1 % make ATS friendly
-```
 
 # Headers
 
