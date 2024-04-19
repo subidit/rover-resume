@@ -17,9 +17,10 @@
 4. Don’t underline.
 5. Don’t Title Case small caps.
 6. Don’t put period(.) in MMM YYYY 
-7. It’s fine to make the point size bigger, but just a little. 
+7. Don’t use *faux* italics or small caps. 
 8. Use **point size**, **bold**, and **ALL CAPS** for hirarchy.
-9. Sans serifs usually don't have real italics or small caps. 
+9. Use the smallest increment necessary in point size to make a visible difference.
+
 
 ## How to select fonts
 
