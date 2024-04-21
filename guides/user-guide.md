@@ -342,6 +342,98 @@ To start the label at the margin and the item text at the current parindent:
 \labelindent + \labelwidth + \labelsep
 ```
 
+# Snippets
+
+## \subsection{}{}{}
+```latex
+\usepackage{xifthen} % for \ifthenelse
+\usepackage{needspace} % for \needspace
+\usepackage{xhfill} % for raised line w \xrfill
+
+\renewcommand{\section}[1]{
+  \goodbreak
+  \needspace{2\baselineskip}
+  \addvspace{1.0em plus 0.5em minus 0.4em}
+  \par\noindent 
+  \xrfill[.7ex]{1pt}%
+  {\large\bfseries \MakeUppercase{ #1}}
+  \xrfill[0.7ex]{1pt}%
+  \par  
+}
+
+\renewcommand{\subsection}[3]{%
+  \needspace{2\baselineskip}
+  \addvspace{0.5em plus 0.3em minus 0.1em}
+  \par\noindent
+  {\large
+  \textbf{#1}%
+  \ifthenelse{\NOT\equal{#1}{\empty} \AND \NOT\equal{#2}{\empty}}{ $|$ }{}%
+  \textsc{#2}%
+  \hfill #3%
+  \par}%
+}
+```
+
+## \section[Right-aligned text]{Section Title}
+
+```latex
+\documentclass{article}
+
+\setcounter{secnumdepth}{0}
+\usepackage[empty]{fullpage}
+\usepackage[bookmarks=false]{hyperref}
+\usepackage{blindtext}
+
+\usepackage[explicit]{titlesec}
+
+% Redefine \subsection
+\titleformat{\subsection}{\normalfont\large\bfseries}{}{}{#1 \hfill \subsectionopt}[]
+
+% Define \subsectionopt and redefine \subsection command
+\newcommand{\subsectionopt}{}
+
+\let\oldsubsection\subsection
+\renewcommand{\subsection}[2][]{%
+  \if\relax\detokenize{#1}\relax
+    \renewcommand{\subsectionopt}{}%
+  \else
+    \renewcommand{\subsectionopt}{#1}%
+  \fi
+  \oldsubsection{#2}
+}
+
+% Redefine \subsubsection
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{}{}{#1 \hfill \subsubsectionopt}[]
+
+% Define \subsubsectionopt and redefine \subsubsection command
+\newcommand{\subsubsectionopt}{}
+
+\let\oldsubsubsection\subsubsection
+\renewcommand{\subsubsection}[2][]{%
+  \if\relax\detokenize{#1}\relax
+    \renewcommand{\subsubsectionopt}{}%
+  \else
+    \renewcommand{\subsubsectionopt}{#1}%
+  \fi
+  \oldsubsubsection{#2}
+}
+
+
+\begin{document}
+
+\section[Optional Section Text]{Section Title}
+
+\subsection[Optional Subsection Text]{Subsection Title}
+\blindenumerate[3]
+
+\subsubsection[Optional Subsubsection Text]{Subsubsection Title}
+\blinditemize[3]
+
+\end{document}
+
+```
+
+
 <!-- 
 # Titles
 

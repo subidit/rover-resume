@@ -39,23 +39,16 @@ Refer to the [User Guide](/guides/user-guide.md) for more customization options 
 [Edit on Overleaf](https://www.overleaf.com/latex/templates/rover-resume/bpzqtssvfgsn). Or just copy paste the code into your favorite LaTeX editor.
 
 ## Getting Started
-1. **Get the Repository**: Fork or Download this repository to your local machine.   
-2. **Select a Template**: Choose a template from the available options.
-3. **Fill in Your Details**: Personalize the template by filling in your information.
+1. Star it for quick access later.
+2. **Get the Repository**: Fork or Download this repository to your local machine.   
+3. **Select a Template**: Choose a template from the available options.
+4. **Fill in Your Details**: Personalize the template by filling in your information.
 
 ### Tips for Using LaTeX Commands
 - **Sectioning**: Use `\section` for major sections like Education, Experience, Certifications, Awards, Skills & Interests, etc.
 - **Subsectioning**: Employ `\subsection{}` and `\subsubsection` for primary and secondary titles such as Institution Name, Position Title, Duration, etc.
 - **Text Alignment**: Utilize `\hfill` to right-align dates etc.
 - **Bullet Points**: Use `itemize` lists for creating bullet points.
-
-
-
-## Templates
-
-- **Base Rover**: A straightforward template without custom commands, easy to understand and customize. Offers a plain and simple design.
-- **Fancy Rover**: Provides font-specific commands for different weights and sizes. Utilizes `ifelse` for conditional vertical spacing. 
-- **Star Rover**: Includes a separate `preamble.tex` file. Introduces two custom commands: `\uthree` for single-line headers and `\ufour` for double-line headers.
 
 
 ## Support
