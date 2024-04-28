@@ -1,66 +1,203 @@
-\documentclass[11pt]{article} % Font size 10pt/11pt/12pt
+%-------------------------
+% Star Rover Resume Template
+% Link: https://github.com/subidit/rover-resume
+%
+% CUSTOM COMMANDS \aux{} and \rside{} for part formatting
+% eg. \subsection{Company Name \aux{Designation} \rside{Duration}}
+% Double lined titles with \subsection{} and \subsubsection{}
+% \linkicon gives external link icon
+%-------------------------
 
-\input{preamble.tex} 
+\documentclass[11pt]{article}
+
+
+\usepackage[sfdefault,light,medium,lf]{FiraSans}
+\usepackage[a4paper,margin=1in]{geometry}
+
+\usepackage{xcolor}
+\definecolor{accent}{HTML}{141E61}
+
+\newcommand{\linkicon}{
+  \color{gray}{\footnotesize\raisebox{1pt}{\faIcon{external-link-alt}}}
+}
+
+\setcounter{secnumdepth}{0}
+\pdfgentounicode=1
+
+
+%====== LIST FORMATTING ======
+\usepackage{enumitem}
+\setlist[itemize]{nosep, left=0pt .. 1.5em}
+\setlist[enumerate]{left=0pt..1.5em}
+% \setlist[description]{itemsep=0pt, font=\fontseries{regular}\selectfont}
+
+
+%====== TITLE FORMATTING ======
+\usepackage{xhfill}
+\usepackage{soul}
+\newcommand{\midrule}[1]{
+  \leavevmode
+  \xrfill[.5ex]{1pt}[accent]~\so{#1}~\xrfill[.5ex]{1pt}[accent]
+}
+
+\usepackage{titlesec}
+\titlespacing{\subsection}{0pt}{\bigskipamount}{*0}
+\titlespacing{\subsubsection}{0pt}{*0}{*0}
+\titleformat{\section}{\large\bfseries\uppercase}{}{}{\midrule}
+\titleformat*{\subsection}{\large\bfseries\scshape}
+
+
+%====== CUSTOM COMMANDS ======
+\newcommand{\aux}[1]{
+  $|$ \space {\normalfont\fontseries{regular}\selectfont\itshape #1}%
+}
+
+\newcommand{\rside}[1]{
+  \hfill{\normalfont\fontseries{regular}\selectfont\color{accent} #1}%
+}
+
+
+%====== FOOTER ======
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+
+% Replace 'Star Rover' with your name in next line
+\fancyfoot[C]{\small\color{gray} Star Rover -- Page \thepage\ of \pageref*{LastPage}}
+
+% \pagestyle{empty} 
+% uncomment previous line to hide page numbering
+
+
+%====== PACKAGES ======
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage[bookmarks=false,hidelinks]{hyperref}
+
+
+%====== FINISH PREAMBLE ======
+
+%====== DOCUMENT STARTS HERE ======
 
 \begin{document}
 
-\begin{multicols}{3}
-  \begin{flushleft}
-    \color{gray}{\faPhone} \href{tel:1234567890}{123 456 7890} \\
-    \color{gray}{\faEnvelope} \href{mailto:youremail@example.com}{email@example.com} \\
-  \end{flushleft}
+%====== BANNER ======
+
+\begin{center}
+  {
+    \fontsize{36}{12}
+    \fontseries{heavy}\selectfont
+    \color{accent} 
+    STAR ROVER % YOUR NAME HERE
+  } \\ \medskip
+
+  % {\color{gray}{\faHome}} 1 infinite loop, CA \quad
+
+  \href{tel:1234567890}{{\color{gray}{\faPhone}} 123 456 7890} \quad
+  \href{mailto:youremail@example.com}{{\color{gray}{\faEnvelope}} email@example.com} \quad 
+  \href{https://github.com/yourusername}{{\color{gray}{\faGithub}} username} \quad
+  % \href{https://www.linkedin.com/in/yourprofile}{{\color{gray}{\faLinkedin}} profile-name} \quad
+  \href{https://github.com/}{{\color{gray}{\faLink}} starportfolio.com} 
+\end{center}
+
+
+% %====== BANNER 2 ======
+
+% \begin{center}
+%   \begin{minipage}{0.45\textwidth}
+%     {\Huge\fontseries{heavy}\selectfont\color{accent} STAR ROVER} \\
+%     Sr. Resume Manager
+%   \end{minipage}
+%   \hfill
+%   \begin{minipage}{0.45\textwidth}
+%     \raggedleft
+%     \href{https://www.linkedin.com/in/yourprofile}{yourprofile {\color{gray}{\faLinkedin}}} \\
+%     \href{https://github.com/yourusername}{yourusername {\color{gray}{\faGithub}}} \\
+%     \href{https://github.com/}{starportfolio.com {\color{gray}{\faLink}}} 
+%   \end{minipage}
+% \end{center}
+
+% %====== BANNER 3 ======
+
+% \begin{multicols}{3}
+%   \begin{flushleft}
+%     \href{tel:1234567890}{{\color{gray}{\faPhone}} 123 456 7890} \\ 
+%     {\color{gray}{\faHome}} 1 infinite loop, CA \\
+%     \href{mailto:youremail@example.com}{{\color{gray}{\faEnvelope}} email@example.com} 
+%   \end{flushleft}
   
-\columnbreak
+% \columnbreak
 
-  \begin{center}
-      {\huge\bfseries STAR ROVER} \par
-      1 infinite loop, Menlo Park, CA \par
-  \end{center}
+%   \begin{center}
+%     {\Huge\fontseries{heavy}\selectfont\color{accent} STAR ROVER} \\
+%     Sr. Resume Manager
+%   \end{center}
 
-\columnbreak
+% \columnbreak
 
-  \begin{flushright}
-    \href{https://www.linkedin.com/in/yourprofile}{yourprofile} {\color{gray}{\faLinkedin}} \\
-    \href{https://github.com/yourusername}{yourusername} {\textcolor{gray}{\faGithub}} \\
-  \end{flushright}
-\end{multicols}
+%   \begin{flushright}
+%     \href{https://www.linkedin.com/in/yourprofile}{yourprofile {\color{gray}{\faLinkedin}}} \\
+%     \href{https://github.com/yourusername}{yourusername {\color{gray}{\faGithub}}} \\
+%     \href{https://github.com/}{starportfolio.com {\color{gray}{\faLink}}} 
+%   \end{flushright}
+% \end{multicols}
 
-\section{Education}
-%=============%
-\uthree{Graduation University}{B.Sc. in Engineering}{August 2020}{
-    \item Cumulative GPA: 3.98
-    \item Related Coursework: Intro to Programming with Python, Database Administration
-    \item Rover Resume Award, Rover Resume Award,Rover Resume Award
-}
+
+% \section{Education}
+% %==========
+% \subsection{Graduation University \aux{BS in Engineering} \rside{2020 -- 2024}}
+% \begin{itemize}
+%   \item \textit{summa cum laude}
+%   \item Extensive coursework in Astrophysics, Statistics
+%   \item Van Damme Scholarship
+% \end{itemize}
 
 
 \section{Experience}
-%==============%
-\ufour{Amazon Inc.}{Feb 2008 -- Present}{Prime Member}{Seattle, WA}{
+%==========
+\subsection{Amazon \rside{Seattle, WA}}
+\subsubsection{Prime Member \rside{Jul 2020 -- Mar 2022}}
+\begin{itemize}
   \item Increased order volume by 823\% over 7 years 
   \item Researched diverse product catalog, spanning departments from Simplehuman bag liners to cat food. 
   \item Regularly reported on product quality using review portal.
-}
+\end{itemize}
 
-\ufour{Sr. Program Manager}{Jan 2021 -- Dec 2023}{Company LTD.}{City, State}{
-  \item XYZ method - Accomplished [X] as measured by [Y], by doing [Z].    
-  \item CAR method - Context, Action, Result. STAR method - Situation, Task, Action, Result.
-  \item Begin each line with an action verb and include details that will help the reader understand your accomplishments, skills, knowledge, abilities, or achievements.
-  \item Quantify where possible.
-}    
+\subsection{Google \rside{Mountain View, CA}}
+\subsubsection{Data Source \rside{Jan 2014 -- Dec 2016}}
+\begin{itemize}
+  \item Responsible for managing submissions of monetizable personal data across a diverse suite of products including Search, Gmail, Maps, and more. 
+  \item Troubleshoot Calendar sync issues. 
+  \item Received 1st ranking in Search for my own name.
+\end{itemize}
+
+\subsubsection{Intern \rside{Jun 2013 -- Dec 2013}}
+\begin{itemize}
+  \item Ensured timely operation and management of the coffee machine.
+  \item Exceeded market benchmarks of 'Printout-to-Desktop' service.
+\end{itemize}
 
 
 \section{Projects}
-%===========%
-\uthree{Project Name}{\href{http://github.com}{Project-link}}{Jun 2022}{
+%=================
+\subsection{Lunar Rover Project \aux{\href{https://robotics.nasa.gov/lmr/}{Link \linkicon}} \rside{2012 -- 13}}
+\begin{itemize}
+  \item LIDAR array, GPS, Variable FOV camera, Python, C/C++
+  \item Designed the rover to be modular, reconfigurable for sensor systems, handle science payloads, storage space, surplus resources, and robotics addons. % These modules shall be supported by centralized power and data ports. 
+\end{itemize}
+
+\subsection{Mars Rover \aux{\href{https://science.nasa.gov/mission/mars-exploration-rovers-spirit-and-opportunity/}{Project link \linkicon}} \rside{Feb 2012}}
+\begin{itemize}
   \item Tech used, Language, Frameworks etc.
   \item Implemented ABC feature
   \item Optimised XYZ by 50\%
-}    
+\end{itemize}
 
 
 \section{Skills}
-%=========%
+%===============
 \begin{description}
   \item[Technical] List computer software and programming languages 
   \item[Language] List foreign languages and your level of fluency
@@ -69,23 +206,11 @@
 \end{description}
 
 
-\section{Certification \& Awards}
-%===============================%
-\begin{description}
-  \item [2023] Some programming bootcamp, Location.
-  \item [2022] Forbes Top 15 Procrastinators under 15.
-  \item [2021] Conducted workshop on family planning by abstainance in SomePlace.
-\end{description}
-
-
 \section{Publications}
-%===================%
-\begin{enumerate}[label={[\texttt{\arabic*}]}, left=0pt .. 1.5em]
-  \item Doe, J. (2021). Title of first article. \emph{Journal Name}, \emph{Volume}(Issue), page range.
-  \item Doe, J. (2020). Title of second article. \emph{Journal Name}, \emph{Volume}(Issue), page range.
-  \item Doe, J., \& Smith, J. (2019). Title of third article. \emph{Journal Name}, \emph{Volume}(Issue), page range.
-  \item Smith, J., \& Doe, J. (2018). Title of fourth article. \emph{Journal Name}, \emph{Volume}(Issue), page range.
-  \item Smith, J. (2017). Title of fifth article. \emph{Journal Name}, \emph{Volume}(Issue), page range.
+%=====================
+\begin{enumerate}
+  \item A. Vaswani \textit{et al.}, “Attention is All you Need,” \textit{arXiv (Cornell University)}, vol. 30, pp. 5998–6008, Jun. 2017, [Online]. Available: https://arxiv.org/pdf/1706.03762v5
+  \item C. Darwin and J. Murray, \textit{On the origin of species by means of natural selection, or, The preservation of favoured races in the struggle for life.} 1859. doi: 10.5962/bhl.title.82303.
 \end{enumerate}
 
 \end{document}

@@ -57,12 +57,12 @@
 %======== FOOTER ============
 \usepackage[page]{totalcount}
 \usepackage{fancyhdr}
-\usepackage{ifthen}
+\usepackage{xifthen}
 
 \AtBeginDocument{
-    \ifthenelse{\totalpages>1}
-    {\pagestyle{fancy}} 
-    {\pagestyle{empty}} % no page number if only one page
+    \ifthenelse{\totalpages>1}%
+    {\pagestyle{fancy}}%
+    {\pagestyle{empty}}% no page number if only one page
 }
     
 \renewcommand{\headrulewidth}{0pt}	
@@ -70,7 +70,7 @@
 \cfoot{\color{gray}Rover Resume -- Page \thepage{} of \totalpages}
 
 \usepackage{xcolor}
-\usepackage{hyperref}
+\usepackage[bookmarks=false]{hyperref}
 \hypersetup{
     colorlinks=true,
     urlcolor=darkgray
