@@ -11,7 +11,7 @@
 \documentclass[11pt]{article}
 
 
-\usepackage[sfdefault,light,medium,lf]{FiraSans}
+\usepackage[sfdefault,semibold,lf]{FiraSans}
 \usepackage[a4paper,margin=1in]{geometry}
 
 \usepackage{xcolor}
@@ -29,7 +29,7 @@
 \usepackage{enumitem}
 \setlist[itemize]{nosep, left=0pt .. 1.5em}
 \setlist[enumerate]{left=0pt..1.5em}
-% \setlist[description]{itemsep=0pt, font=\fontseries{regular}\selectfont}
+\setlist[description]{itemsep=0pt}
 
 
 %====== TITLE FORMATTING ======
@@ -41,6 +41,7 @@
 }
 
 \usepackage{titlesec}
+\titlespacing{\section}{0pt}{2\bigskipamount}{*1}
 \titlespacing{\subsection}{0pt}{\bigskipamount}{*0}
 \titlespacing{\subsubsection}{0pt}{*0}{*0}
 \titleformat{\section}{\large\bfseries\uppercase}{}{}{\midrule}
@@ -49,11 +50,11 @@
 
 %====== CUSTOM COMMANDS ======
 \newcommand{\aux}[1]{
-  $|$ \space {\normalfont\fontseries{regular}\selectfont\itshape #1}%
+  $|$ \space {\normalfont\itshape #1}%
 }
 
 \newcommand{\rside}[1]{
-  \hfill{\normalfont\fontseries{regular}\selectfont\color{accent} #1}%
+  \hfill {\normalfont\color{accent} #1}%
 }
 
 
@@ -87,7 +88,7 @@
 
 \begin{center}
   {
-    \fontsize{36}{12}
+    \fontsize{36}{12} 
     \fontseries{heavy}\selectfont
     \color{accent} 
     STAR ROVER % YOUR NAME HERE
@@ -102,57 +103,17 @@
   \href{https://github.com/}{{\color{gray}{\faLink}} starportfolio.com} 
 \end{center}
 
-
-% %====== BANNER 2 ======
-
-% \begin{center}
-%   \begin{minipage}{0.45\textwidth}
-%     {\Huge\fontseries{heavy}\selectfont\color{accent} STAR ROVER} \\
-%     Sr. Resume Manager
-%   \end{minipage}
-%   \hfill
-%   \begin{minipage}{0.45\textwidth}
-%     \raggedleft
-%     \href{https://www.linkedin.com/in/yourprofile}{yourprofile {\color{gray}{\faLinkedin}}} \\
-%     \href{https://github.com/yourusername}{yourusername {\color{gray}{\faGithub}}} \\
-%     \href{https://github.com/}{starportfolio.com {\color{gray}{\faLink}}} 
-%   \end{minipage}
-% \end{center}
-
-% %====== BANNER 3 ======
-
-% \begin{multicols}{3}
-%   \begin{flushleft}
-%     \href{tel:1234567890}{{\color{gray}{\faPhone}} 123 456 7890} \\ 
-%     {\color{gray}{\faHome}} 1 infinite loop, CA \\
-%     \href{mailto:youremail@example.com}{{\color{gray}{\faEnvelope}} email@example.com} 
-%   \end{flushleft}
-  
-% \columnbreak
-
-%   \begin{center}
-%     {\Huge\fontseries{heavy}\selectfont\color{accent} STAR ROVER} \\
-%     Sr. Resume Manager
-%   \end{center}
-
-% \columnbreak
-
-%   \begin{flushright}
-%     \href{https://www.linkedin.com/in/yourprofile}{yourprofile {\color{gray}{\faLinkedin}}} \\
-%     \href{https://github.com/yourusername}{yourusername {\color{gray}{\faGithub}}} \\
-%     \href{https://github.com/}{starportfolio.com {\color{gray}{\faLink}}} 
-%   \end{flushright}
-% \end{multicols}
+%====== BANNER END ======
 
 
-% \section{Education}
-% %==========
-% \subsection{Graduation University \aux{BS in Engineering} \rside{2020 -- 2024}}
-% \begin{itemize}
-%   \item \textit{summa cum laude}
-%   \item Extensive coursework in Astrophysics, Statistics
-%   \item Van Damme Scholarship
-% \end{itemize}
+\section{Education}
+%==========
+\subsection{Graduation University \aux{BS in Engineering} \rside{2020 -- 2024}}
+\begin{itemize}
+  \item \textit{summa cum laude}
+  \item Extensive coursework in Astrophysics, Statistics
+  \item Van Damme Scholarship
+\end{itemize}
 
 
 \section{Experience}
@@ -180,6 +141,42 @@
 \end{itemize}
 
 
+\section{Skills}
+%===============
+\begin{description}
+  \item[Technical] List computer software and programming languages 
+  \item[Language] List foreign languages and your level of fluency
+  \item[Laboratory] List scientific / research lab techniques or tools [If Applicable]
+  \item[Interests] List activities you enjoy that may spark interview conversation
+\end{description}
+
+
+\section{Certifications}
+%=======================
+\begin{enumerate}[label=\null, left=0pt..0pt, itemsep=0pt]
+  \item Some programming bootcamp, Location. \rside{2023}
+  \item Forbes Top 15 Procrastinators under 15. \rside{2022}
+  \item Perticipation award for attending workshop. \rside{2021}
+\end{enumerate}
+
+
+\section{Publications}
+%=====================
+\begin{enumerate}
+  \item A. Vaswani et al., “Attention is All you Need,” arXiv (Cornell University), vol. 30, pp. 5998 – 6008, Jun. 2017, [Online]. Available: \url{https://arxiv.org/pdf/1706.03762v5}
+  \item C. Darwin and J. Murray, \textit{On the origin of species by means of natural selection, or, The preservation of favoured races in the struggle for life.} 1859. doi: 10.5962/bhl.title.82303.
+\end{enumerate}
+
+
+\section{Awards}
+%===============
+\begin{description}
+  \item [2023] Some programming bootcamp, Location.
+  \item [2022] Forbes Top 15 Procrastinators under 15.
+  \item [2021] Conducted workshop on family planning by abstainance in SomePlace.
+\end{description}
+
+
 \section{Projects}
 %=================
 \subsection{Lunar Rover Project \aux{\href{https://robotics.nasa.gov/lmr/}{Link \linkicon}} \rside{2012 -- 13}}
@@ -195,22 +192,5 @@
   \item Optimised XYZ by 50\%
 \end{itemize}
 
-
-\section{Skills}
-%===============
-\begin{description}
-  \item[Technical] List computer software and programming languages 
-  \item[Language] List foreign languages and your level of fluency
-  \item[Laboratory] List scientific / research lab techniques or tools [If Applicable]
-  \item[Interests] List activities you enjoy that may spark interview conversation
-\end{description}
-
-
-\section{Publications}
-%=====================
-\begin{enumerate}
-  \item A. Vaswani \textit{et al.}, “Attention is All you Need,” \textit{arXiv (Cornell University)}, vol. 30, pp. 5998–6008, Jun. 2017, [Online]. Available: https://arxiv.org/pdf/1706.03762v5
-  \item C. Darwin and J. Murray, \textit{On the origin of species by means of natural selection, or, The preservation of favoured races in the struggle for life.} 1859. doi: 10.5962/bhl.title.82303.
-\end{enumerate}
 
 \end{document}
