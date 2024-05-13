@@ -37,7 +37,7 @@ This template uses minimal customization commands. Use it as your starting point
 
 This template has many bells and whistles for customization. This will show you how to customise various aspects of the document design. But remember don't go over-board with colours and fonts as too many cooks spoil the broth.  
 
-## Star Rover
+## Obsolete Rover
 
 It uses two custom commands `\uthree` and `\ufour`. It also moves the preamble to another file. 
 ```latex

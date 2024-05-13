@@ -1,6 +1,6 @@
-# Reference
+# Reference <!-- omit from toc -->
 
-## Contents
+## Contents <!-- omit from toc -->
 
 - [enumitem](#enumitem)
 - [titlesec](#titlesec)
@@ -104,8 +104,26 @@ Spacing above `1.0em plus 0.5em minus 0.4em` and Spacing below `0.5em plus 0.3em
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyfoot[C]{Page \thepage\ of \pageref*{LastPage}}
 \renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{Page \thepage\ of \pageref*{LastPage}}
+```
+
+To generate page number only when then there is more than one page:
+```latex
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+
+\AtBeginDocument{
+    \ifnum\getpagerefnumber{LastPage}>1
+        \pagestyle{fancy}
+    \else
+        \pagestyle{empty}
+    \fi
+}
+
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+\cfoot{Rover Resume -- Page \thepage{} of \getpagerefnumber{LastPage}}
 ```
 
 ## hyperref
@@ -183,12 +201,13 @@ The *-form inserts vertical space that is non-discardable. More precisely, LaTeX
 ## Color
 
 `xcolor` package.
-
+```latex
 \usepackage[dvipsnames,svgnames,x11names]{xcolor}
 
 \colorlet[⟨type⟩]{⟨name⟩}[⟨num model⟩]{⟨color⟩}
 
 \definecolor[⟨type⟩]{⟨name⟩}{⟨model-list⟩}{⟨spec-list⟩}
+```
 
 ## Images
 
