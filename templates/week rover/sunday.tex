@@ -1,0 +1,48 @@
+\usepackage[margin=1in,a4paper]{geometry}
+
+\setcounter{secnumdepth}{0}
+
+\usepackage{enumitem}
+\setlist[itemize]{nosep,left=0pt..1.5em}
+\setlist[enumerate]{itemsep=0pt}
+\setlist[description]{itemsep=0pt}
+
+\usepackage{titlesec}
+\titlespacing{\section}{0pt}{*4}{*2}
+\titlespacing{\subsection}{0pt}{*3}{-\parskip}
+\titlespacing{\subsubsection}{0pt}{\parskip}{*0}
+\titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule \global\RemVStrue]
+\titleformat{\subsection}{\large\bfseries}{}{}{\rvs}
+\titleformat*{\subsubsection}{\large\itshape}
+
+\newif\ifRemVS % remove vspace between \section & \subsection
+\newcommand{\rvs}{
+  \ifRemVS
+    \vspace{-1ex}
+  \fi
+  \global\RemVSfalse
+}
+
+\newcommand{\aux}[1]{%
+  $|$ {\normalfont #1}
+}
+\newcommand{\rside}[1]{
+  \hfill #1
+}
+
+%======== FOOTER ============
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{refcount}
+
+\AtBeginDocument{
+  \ifnum\getpagerefnumber{LastPage}>1
+    \pagestyle{fancy}
+  \else
+    \pagestyle{empty}
+  \fi
+}
+
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+\cfoot{\small Rover Resume -- Page \thepage{} of \getpagerefnumber{LastPage}}

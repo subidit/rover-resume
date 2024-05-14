@@ -1,9 +1,9 @@
 %======== FONT =========
 \usepackage[T1]{fontenc}
 % \usepackage[default]{raleway}
-\usepackage[sfdefault]{biolinum}
+% \usepackage[sfdefault]{biolinum}
 % \usepackage[sfdefault,light,semibold,lf]{FiraSans}
-% \usepackage[defaultfam,light,semibold,lining]{montserrat}
+\usepackage[defaultfam,light,semibold,lining]{montserrat}
 % \usepackage[sfdefault]{roboto}
 
 %======== MARGIN ========
@@ -45,14 +45,15 @@
 \usepackage{soul}
 \usepackage[explicit]{titlesec}
 \titleformat{\section}
-{\large\bfseries\uppercase}{}{}
-{\hrulefill\ \so{#1} \hrulefill}
+{\centering\large\bfseries\uppercase}{}{}
+{\so{#1}}
 
-% \titlespacing{\section}{0pt}{*4}{*1}
+\titlespacing{\section}{0pt}{*4}{*1}
 
 %======== FOOTER ============
-\usepackage{lastpage}
 \usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{refcount}
 
 \AtBeginDocument{
     \ifnum\getpagerefnumber{LastPage}>1

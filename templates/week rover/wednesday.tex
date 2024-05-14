@@ -1,0 +1,71 @@
+\usepackage[sfdefault,light]{FiraSans}
+
+\usepackage[a4paper,margin=1in]{geometry}
+
+\usepackage{xcolor}
+\definecolor{accent}{HTML}{99A799}
+
+\newcommand{\linkicon}{
+  \color{gray}{\footnotesize\raisebox{1pt}{\faIcon{external-link-alt}}}
+}
+
+\setcounter{secnumdepth}{0}
+\pdfgentounicode=1
+
+
+%====== LIST FORMATTING ======
+\usepackage{enumitem}
+\setlist[itemize]{nosep, left=0pt .. 1.5em}
+\setlist[enumerate]{itemsep=0pt}
+\setlist[description]{itemsep=0pt}
+
+
+%====== TITLE SPACING & FORMATTING ======
+\usepackage{xhfill}
+\usepackage{soul}
+\newcommand{\midrule}[1]{
+  \leavevmode
+  \xrfill[.5ex]{1pt}[accent]~\so{#1}~\xrfill[.5ex]{1pt}[accent]
+}
+
+\usepackage{titlesec}
+\titlespacing{\section}{0pt}{2\bigskipamount}{*2}
+\titlespacing{\subsection}{0pt}{\bigskipamount}{*0}
+\titlespacing{\subsubsection}{0pt}{*0}{*0}
+\titleformat{\section}{\large\bfseries\uppercase}{}{}{\midrule}[\global\RemVStrue]
+\titleformat{\subsection}{\large\bfseries\scshape}{}{}{\rvs}
+
+\newif\ifRemVS 
+\newcommand{\rvs}{
+  \ifRemVS
+    \vspace{-1ex}
+  \fi
+  \global\RemVSfalse
+}
+
+%====== CUSTOM COMMANDS ======
+\newcommand{\aux}[1]{
+  $|$ \space {\normalfont\itshape #1}%
+}
+
+\newcommand{\rside}[1]{
+  \hfill {\normalfont\color{accent}\scshape \lowercase{#1}}%
+}
+
+
+%====== FOOTER ======
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{refcount}
+
+\AtBeginDocument{
+  \ifnum\getpagerefnumber{LastPage}>1
+    \pagestyle{fancy}
+  \else
+    \pagestyle{empty}
+  \fi
+}
+
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+\cfoot{\small\color{gray} Rover Resume -- Page \thepage{} of \getpagerefnumber{LastPage}}

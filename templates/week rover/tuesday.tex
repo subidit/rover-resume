@@ -1,0 +1,33 @@
+\usepackage[default]{sourcesanspro}
+\usepackage[margin=1in,a4paper]{geometry}
+\setcounter{secnumdepth}{0}
+\usepackage{enumitem}
+\setlist{itemsep=0pt}
+\setlist[itemize]{left=0pt..1.5em,nosep}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\titlespacing{\section}{0pt}{*4}{*1}
+\titlespacing{\subsection}{0pt}{*3}{-\parskip}
+\titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
+
+\makeatletter
+\newcommand{\coloredsection}[1]{%
+\def\sectionTitle{#1}%
+\textcolor{red}{\expandafter\extractFirstThree\sectionTitle\@nil}%
+\expandafter\removeFirstThree\sectionTitle\@nil%
+\space\hrulefill
+}
+\def\extractFirstThree#1#2#3#4\@nil{#1#2#3}
+\def\removeFirstThree#1#2#3#4\@nil{#4}
+\makeatother
+
+\titleformat{\section}{\Large\bfseries}{}{}{\coloredsection}
+\titleformat{\subsection}{\large\bfseries}{}{}{}
+\titleformat{\subsubsection}{\large\scshape\color{gray}}{}{}{}
+
+\newcommand{\aux}[1]{%
+  $|$ {\normalfont\color{gray}\scshape #1}
+}
+\newcommand{\rside}[1]{
+  \hfill {\normalfont\color{red}\itshape #1}
+}

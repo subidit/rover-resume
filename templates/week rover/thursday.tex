@@ -1,0 +1,54 @@
+
+\usepackage{charter}
+\usepackage{tgadventor}
+\usepackage[letterspace=100]{microtype}
+
+\usepackage[margin=1.2in,bottom=1in,a4paper]{geometry}
+\setcounter{secnumdepth}{0}
+
+\usepackage{titlesec}
+\titlespacing{\section}{0pt}{3\baselineskip}{*2}
+\titlespacing{\subsection}{0pt}{*3}{*1}
+\titlespacing{\subsubsection}{0pt}{*1}{*1}
+\titleformat{\section}{\footnotesize\sffamily\bfseries\lsstyle\uppercase}{}{}{\titlerule\smallskip}[\global\RemVStrue]
+\titleformat*{\subsection}{\Large\rvs}
+\titleformat*{\subsubsection}{\large\itshape}
+
+\newif\ifRemVS 
+\newcommand{\rvs}{
+  \ifRemVS
+    \vspace{-1ex}
+  \fi
+  \global\RemVSfalse
+}
+
+\usepackage{enumitem}
+\setlist[itemize]{left=0pt..\parindent,itemsep=0pt,topsep=0pt}
+\setlist[enumerate]{align=left}
+\setlist[description]{style=nextline,itemindent=4em}
+
+
+\newcommand{\aux}[1]{%
+  $|$ {\normalfont #1}
+}
+\newcommand{\rside}[1]{
+  \hfill {\normalfont #1}
+}
+
+%====== FOOTER ======
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{refcount}
+\usepackage{xcolor}
+
+\AtBeginDocument{
+  \ifnum\getpagerefnumber{LastPage}>1
+    \pagestyle{fancy}
+  \else
+    \pagestyle{empty}
+  \fi
+}
+
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+\cfoot{\footnotesize\color{gray} Rover Resume -- Page \thepage{} of \getpagerefnumber{LastPage}}
