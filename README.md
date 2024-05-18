@@ -5,11 +5,12 @@
   </picture>
 </div>
 
-This repository provides a simple yet effective CV template using basic LaTeX commands. The BASE ROVER template requires only about 10 lines of code to set up a clean résumé format. For your one-page resume, there's no need for any custom resume class. This template leverages the full power and flexibility of LaTeX, allowing you to customize every aspect without the constraints of predefined classes. 
+This repository has several simple yet effective CV template using basic LaTeX commands. The BASE ROVER template requires only about 10 lines of code to set up a clean résumé format. For your one-page resume, there's no need for any custom resume class. These templates leverage the full power and flexibility of LaTeX, allowing you to customize every aspect without the constraints of predefined classes. 
 
 These templates are designed with ATS (Applicant Tracking System) compatibility in mind, featuring single-column layouts that ensure your résumé is easily parsed. By using standard LaTeX commands, they maintain a clear and organized structure, making it simple for both ATS software and recruiters to quickly identify key details.
 
-If you have any questions about using this template or formatting your résumé, please feel free to post them in the [Discussions](https://github.com/subidit/rover-resume/discussions) section. And don't forget to star the repository if you find it useful! 🌟
+If you have any questions about using this template or formatting your résumé, please feel free to post them in the [Discussions](https://github.com/subidit/rover-resume/discussions) section. 
+
 
 ### Additional Options
 Refer to the [User Guide](/guides/user-guide.md) for more customization options and features.
@@ -20,6 +21,10 @@ Refer to the [User Guide](/guides/user-guide.md) for more customization options 
 |:----:|:-----:|
 | Base Rover Template | Star Rover Template |
 
+| [![Week Rover](/img/monday.jpg)](/templates/week%20rover/monday.tex) | [![Week Rover](/img/tuesday.jpg)](/templates/week%20rover/tuesday.tex) | 
+|:----:|:-----:|
+| Monday - Week Rover | Tuesday - Week Rover |
+
 | [![Milky Rover](/img/milky-rover.jpg)](/templates/milky%20rover/) | [![Fancy Rover](/img/fancy-rover.jpg)](/templates/fancy%20rover/) | 
 |:----:|:-----:|
 | Milky Rover Template | Fancy Rover Template |
@@ -27,13 +32,14 @@ Refer to the [User Guide](/guides/user-guide.md) for more customization options 
 *Milky Rover Template is a recreation of [Butterick’s practical typography](https://practicaltypography.com/resumes.html) résumé template.
 
 ## Features
-* **Simple LaTeX Code:** Utilizes straightforward LaTeX code for easy customization and understanding.
-* **Multiple Themes:** Offers a variety of pre-designed themes for users to choose from, allowing for diverse résumé styles.
-* **Design Best Practices:** Incorporates design principles and best practices to ensure professional and visually appealing résumés.
-* **Customization Options:** Provides flexibility for users to customize their résumés according to their preferences and needs.
-* **Modular Structure:** Organizes the codebase into modular components for easier maintenance and scalability. 
-<!-- * **Documentation:** Includes comprehensive documentation with instructions on how to use the templates effectively.
-* **Community Support:** Offers a supportive community where users can seek help, share tips, and collaborate on improving the templates. -->
+- Option for using either double or single lined titles, useful for filling up the page or fitting more in the page.
+- Multiple ways to format the Name & Contact info banner.
+- ATS friendly.
+- Works with pre-installed LaTeX fonts (T1 fontenc). 
+- Uses `article` class. No need to learn the working of any custom class.
+- Uses typographic best practices. 
+- Your content looks clean and structured.
+
 
 ## Quick start
 [Edit on Overleaf](https://www.overleaf.com/latex/templates/rover-resume/bpzqtssvfgsn). Or just copy paste the code into your favorite LaTeX editor.
@@ -47,7 +53,7 @@ Refer to the [User Guide](/guides/user-guide.md) for more customization options 
 ### Tips for Using LaTeX Commands
 - **Sectioning**: Use `\section` for major sections like Education, Experience, Certifications, Awards, Skills & Interests, etc.
 - **Subsectioning**: Employ `\subsection{}` and `\subsubsection` for primary and secondary titles such as Institution Name, Position Title, Duration, etc.
-- **Text Alignment**: Utilize `\hfill` to right-align dates etc.
+- **Text Alignment**: Utilize `\hfill` to right-align dates etc. There is also `\rside{}`.
 - **Bullet Points**: Use `itemize` lists for creating bullet points.
 
 
