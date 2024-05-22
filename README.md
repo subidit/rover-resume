@@ -12,16 +12,13 @@ These templates are designed with ATS (Applicant Tracking System) compatibility 
 If you have any questions about using this template or formatting your résumé, please feel free to post them in the [Discussions](https://github.com/subidit/rover-resume/discussions) section. 
 
 
-### Additional Options
-Refer to the [User Guide](/guides/user-guide.md) for more customization options and features.
-
 ## Screenshots
 
 | [![Base Rover](/img/base-rover.jpg)](/templates/base%20rover/) | [![Star Rover](/img/star-rover.jpg)](/templates/star%20rover/) | 
 |:----:|:-----:|
 | Base Rover Template | Star Rover Template |
 
-| [![Week Rover](/img/monday.jpg)](/templates/week%20rover/monday.tex) | [![Week Rover](/img/tuesday.jpg)](/templates/week%20rover/tuesday.tex) | 
+| [![Week Rover](/img/monday.jpg)](/templates/week%20rover/main-rover.tex) | [![Week Rover](/img/tuesday.jpg)](/templates/week%20rover/main-rover.tex) | 
 |:----:|:-----:|
 | Monday - Week Rover | Tuesday - Week Rover |
 
