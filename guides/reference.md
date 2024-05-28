@@ -96,6 +96,14 @@ Spacing above `1.0em plus 0.5em minus 0.4em` and Spacing below `0.5em plus 0.3em
 
 ## geometry
 
+Set the margin (ideally between 0.5 inch to 1.5 inch) for the document. Also mention the paper dimension here.
+
+`\usepackage[margin=1in,a4paper]{geometry}`
+
+There is also `fullpage` package which sets the margin to 1 inch all around, also takes `empty` option to suppress page numbering. Useful for a quick single-page setup.
+
+`\usepackage[empty]{fullpage}`
+
 ## fancyhdr
 
 ```latex
@@ -112,6 +120,7 @@ To generate page number only when then there is more than one page:
 ```latex
 \usepackage{lastpage}
 \usepackage{fancyhdr}
+\usepackage{refcount}
 
 \AtBeginDocument{
     \ifnum\getpagerefnumber{LastPage}>1
@@ -121,8 +130,8 @@ To generate page number only when then there is more than one page:
     \fi
 }
 
-\renewcommand{\headrulewidth}{0pt}
-\fancyhf{}
+\fancyhf{} % remove all header & footer formatting
+\renewcommand{\headrulewidth}{0pt} % remove header line
 \cfoot{Rover Resume -- Page \thepage{} of \getpagerefnumber{LastPage}}
 ```
 
@@ -197,6 +206,8 @@ The *-form inserts vertical space that is non-discardable. More precisely, LaTeX
 ## Font styles & sizes
 
 ## Icons
+
+Check `fontawesome5` package documentation for the list of varoius icon commands.
 
 ## Color
 

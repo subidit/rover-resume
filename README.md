@@ -5,11 +5,11 @@
   </picture>
 </div>
 
-This repository has several simple yet effective CV template using basic LaTeX commands. The BASE ROVER template requires only about 10 lines of code to set up a clean résumé format. For your one-page resume, there's no need for any custom resume class. These templates leverage the full power and flexibility of LaTeX, allowing you to customize every aspect without the constraints of predefined classes. 
+This repository has several simple yet effective résumé template using basic LaTeX commands. The BASE ROVER template requires only about 10 lines of code to set up a clean and minimal résumé format. For your résumé, there's no need for any custom résumé class. These templates leverage the full power and flexibility of LaTeX, allowing you to customize every aspect without the constraints of predefined classes. All templates use `article` class and preinstalled fonts only.
 
 These templates are designed with ATS (Applicant Tracking System) compatibility in mind, featuring single-column layouts that ensure your résumé is easily parsed. By using standard LaTeX commands, they maintain a clear and organized structure, making it simple for both ATS software and recruiters to quickly identify key details.
 
-If you have any questions about using this template or formatting your résumé, please feel free to post them in the [Discussions](https://github.com/subidit/rover-resume/discussions) section. 
+If you have any questions about using this template or formatting your résumé, feel free to post them in the [Discussions](https://github.com/subidit/rover-resume/discussions) section. 
 
 
 ## Screenshots
@@ -28,11 +28,13 @@ If you have any questions about using this template or formatting your résumé,
 
 *Milky Rover Template is a recreation of [Butterick’s practical typography](https://practicaltypography.com/resumes.html) résumé template.
 
+
+
 ## Features
-- Option for using either double or single lined titles, useful for filling up the page or fitting more in the page.
+- Single or Double lined title option.
 - Multiple ways to format the Name & Contact info banner.
 - ATS friendly.
-- Works with pre-installed LaTeX fonts (T1 fontenc). 
+- Works with pre-installed LaTeX fonts. 
 - Uses `article` class. No need to learn the working of any custom class.
 - Uses typographic best practices. 
 - Your content looks clean and structured.
@@ -42,15 +44,14 @@ If you have any questions about using this template or formatting your résumé,
 [Edit on Overleaf](https://www.overleaf.com/latex/templates/rover-resume/bpzqtssvfgsn). Or just copy paste the code into your favorite LaTeX editor.
 
 ## Getting Started
-1. Star it for quick access later.
-2. **Get the Repository**: Fork or Download this repository to your local machine.   
-3. **Select a Template**: Choose a template from the available options.
-4. **Fill in Your Details**: Personalize the template by filling in your information.
+1. **Get the Repository**: Fork or Download this repository to your local machine.   
+2. **Select a Template**: Choose a template from the available options.
+3. **Fill in Your Details**: Personalize the template by filling in your information.
+
 
 ### Tips for Using LaTeX Commands
 - **Sectioning**: Use `\section` for major sections like Education, Experience, Certifications, Awards, Skills & Interests, etc.
 - **Subsectioning**: Employ `\subsection{}` and `\subsubsection` for primary and secondary titles such as Institution Name, Position Title, Duration, etc.
-- **Text Alignment**: Utilize `\hfill` to right-align dates etc. There is also `\rside{}`.
 - **Bullet Points**: Use `itemize` lists for creating bullet points.
 
 
@@ -58,7 +59,7 @@ If you have any questions about using this template or formatting your résumé,
 
 For inquiries or assistance, visit the [Discussions](https://github.com/subidit/rover-resume/discussions) tab.
 
-Feel free to contribute to the project or provide feedback by opening an issue or submitting a pull request.
+Feel free to contribute to the project or provide feedback by opening an issue or submitting a pull request. 
 
 Happy job hunting!
 
