@@ -1,0 +1,29 @@
+\documentclass[11pt]{article}
+
+\usepackage{libertinus}
+\usepackage[margin=1in,letterpaper]{geometry}
+
+\usepackage[backend=biber,style=numeric,defernumbers=true]{biblatex}
+\addbibresource{many-ref.bib}
+\setlength{\biblabelsep}{\parindent} 
+\nocite{*} % to include all references from the .bib file
+
+\begin{document}
+
+\section*{Research Publications \hrulefill}
+
+\printbibliography[type=article, title={Articles}]
+\printbibliography[type=book, title={Books}]
+\printbibliography[type=booklet, title={Booklets}]
+\printbibliography[type=manual, title={Manuals}]
+\printbibliography[nottype=article,nottype=book,nottype=booklet,nottype=manual,nottype=incollection,nottype=inproceedings, title={Miscellaneous}]
+
+% Combine incollection and inproceedings under Presentations
+\defbibfilter{presentations}{
+  type=incollection or
+  type=inproceedings
+}
+
+\printbibliography[filter=presentations, title={Presentations}]
+
+\end{document}

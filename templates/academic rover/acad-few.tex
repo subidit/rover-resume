@@ -1,0 +1,47 @@
+\documentclass[11pt]{article}
+
+\usepackage{scholax}
+\usepackage[margin=1in,a4paper]{geometry}
+\setcounter{secnumdepth}{0}
+\usepackage{microtype}
+
+\usepackage{enumitem}
+\setlist[itemize]{nosep,left=0pt..1.5em}
+\setlist[enumerate]{leftmargin=*,labelsep=\parindent,label=[{\arabic*}]}
+
+\usepackage{titlesec}
+% \titlespacing{\section}{0pt}{*4}{*1}
+\titlespacing{\subsection}{0pt}{*2.5}{-\parskip}
+\titlespacing{\subsubsection}{0pt}{*0}{*0}
+\titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule]
+\titleformat*{\subsection}{\large\bfseries}
+\titleformat*{\subsubsection}{\bfseries\itshape}
+
+\usepackage{bibentry}
+
+
+\begin{document}
+
+\section{Education}
+%==================
+\subsection{M.Phil. in Mathematics \hfill Jun 2024}
+\subsubsection{Generic University \hfill City, ST}
+\begin{itemize}
+  \item You can generate a list of your publications from an external \texttt{.bib} file.
+  \item One way is to \verb|\cite{refcode}| in a list. Good for fewer items. Requires only \textit{bibentry} package.
+  \item Another way is to print all items from a \texttt{.bib} file. Could be sub-categorised if required.
+\end{itemize}
+
+\section{Publications}
+%=====================
+\nobibliography{few-ref}
+\bibliographystyle{unsrt}
+
+\begin{enumerate}
+  \item \bibentry{vaswani_attention_2023}
+  \item \bibentry{moss_prophylactic_2002}
+  \item \bibentry{zadeh_fuzzy_1965}
+  \item \bibentry{nash_equilibrium_1950}
+\end{enumerate}
+
+\end{document}
