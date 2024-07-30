@@ -55,6 +55,30 @@ If you have any questions about using this template or formatting your résumé,
 - **Bullet Points**: Use `itemize` lists for creating bullet points.
 
 
+## Known Issue
+
+<details>
+
+<summary>Package hyperref Warning:</summary>
+
+This occurs because `hyperref` package creates clickable texts for both internal and external links. When generating a PDF, certain elements like bookmarks, metadata, and hyperlinks are encoded as **PDF strings**. Since `\section{}`, `\subsection{}` etc. are used in the *Table of contents* (i.e. bookmarks), certain LaTeX commands (like `\hfill`) or control sequences doesn't make sense in this context.
+
+When `hyperref` encounters the `\hfill` command while processing a piece of text that needs to be converted into a PDF string, it cannot include this command in the output PDF string. As a result, it removes the command and issues a warning to notify you of this action. 
+
+We can circumvents this issue by disabling the creation of bookmarks as shown below.
+
+
+```latex
+    \usepackage[bookmarks=false]{hyperref}
+```
+
+> [!CAUTION]
+> To avoid generating warnings, the `bookmarks` option in the `hyperref` package must be set during package loading with `\usepackage[bookmarks=false]{hyperref}`. You can use `\hypersetup{}` for everything else.
+
+
+</details>
+
+
 ## Support
 
 For inquiries or assistance, visit the [Discussions](https://github.com/subidit/rover-resume/discussions) tab.
