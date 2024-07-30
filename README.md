@@ -72,11 +72,11 @@ We can circumvents this issue by disabling the creation of bookmarks as shown be
     \usepackage[bookmarks=false]{hyperref}
 ```
 
+</details>
+
+
 > [!CAUTION]
 > To avoid generating warnings, the `bookmarks` option in the `hyperref` package must be set during package loading with `\usepackage[bookmarks=false]{hyperref}`. You can use `\hypersetup{}` for everything else.
-
-
-</details>
 
 
 ## Support
