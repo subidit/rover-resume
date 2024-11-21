@@ -2,7 +2,7 @@
 .DS_Store
 Thumbs.db
 
-## Core latex/pdflatex auxiliary files:
+## Core latex/pdflatex auxiliary files
 *.aux
 *.lof
 *.log
@@ -16,7 +16,7 @@ Thumbs.db
 *.cb2
 .*.lb
 
-## Intermediate documents:
+## Intermediate documents
 *.dvi
 *.xdv
 *-converted-to.*
@@ -28,7 +28,7 @@ Thumbs.db
 ## Generated if empty string is given at "Please type another file name for output:"
 .pdf
 
-## Bibliography auxiliary files (bibtex/biblatex/biber):
+## Bibliography auxiliary files (bibtex/biblatex/biber)
 *.bbl
 *.bcf
 *.blg
@@ -36,7 +36,7 @@ Thumbs.db
 *-blx.bib
 *.run.xml
 
-## Build tool auxiliary files:
+## Build tool auxiliary files
 *.fdb_latexmk
 *.synctex
 *.synctex(busy)
