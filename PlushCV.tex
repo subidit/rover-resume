@@ -1,0 +1,245 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PlushCV - One Page Two Column Resume
+% LaTeX Template
+% Version 1.0 (11/28/2021)
+%
+% Author:
+% Shubham Mazumder (http://mazumder.me)
+%
+% Hacked together from:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add more icon options 
+% 4. Fix hacky left alignment on contact line
+% 5. Remove Hacky fix for awkward extra vertical space
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the vertical limit.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Icons:
+%%Main: https://icons8.com/icons/carbon-copy
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{plushcv}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \namesection{Rolandas}{Griskevicius}{Clojure developer}
+% {\contactline{\href{https://www.github.com/rgrisha}{rgrisha}}
+% {\href{https://www.linkedin.com/}{rolandasgriskevicius}}
+% {\href{mailto:rol.griskevicius@gmail.com}{first.last@email.com}}{\href{tel:+37061122449}{+37061122449}}}
+
+\namesection{Rolandas}{Griskevicius}{Team lead and Clojure developer}
+{\contactline
+  %{\href{https://www.mazumder.me}{mazumder.me}}
+  {\href{https://www.github.com/rgrisha}{rgrisha}}
+  {\href{https://www.linkedin.com/in/rolandasgriskevicius}{rolandasgriskevicius}}
+  {\href{mailto:rol.griskevicius@gmail.com}{rol.griskevicius@gmail.com}}
+  {\href{tel:+37061122449}{+37061122449}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.70\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Railsbank / Railsr. Embedded finance platform}
+\descript{| Technical Team Lead}
+\location{Nov 2020 - Present | Vilnius, Lithuania }
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\sectionsep
+\item Developing Clojure REST services. Responsible for deliveries of team of 4 people. Team responsibilities - Core banking platform, KYC subsystem, webhook delivery service (full rework, service fully separated from monolith)
+\item Technologies used: \textbullet{} Clojure subsystem: Integrant, Reitit, Datomic \textbullet{} IaC : Terraform, AWS SQS, RDS, SNS, Dynamo, Postgres
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Swedbank AB}
+\descript{| Senior Developer }
+\location{Jun 2014 - Nov 2020 | Vilnius, Lithuania}
+\begin{tightemize}
+\sectionsep
+\item Developing REST API backend services in KYC area (Java, Bash)
+\item Integrating third-party services using REST API
+\item Developing test automation frameworks and scripts (Java and Javascript) 
+\item Technologies used: Java, Spring, IBM RAD, Javascript / Node.js
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Euromonitor International}
+\descript{| Database Developer }
+\location{Apr 2014 - May 2014 | Vilnius, Lithuania}
+\begin{tightemize}
+\sectionsep
+\item Developing data processing pipelines for custom analitics platform in MS SQL
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Circle K / Statoil}
+\descript{| IT specialist / Developer }
+\location{Jul 2003 - Apr 2014 | Vilnius, Lithuania}
+\begin{tightemize}
+\sectionsep
+\item Electronic ordering solutions development, retail solutions integration
+\item Technologies used: C\#, F\#, OCaml, Clojure, MS SQL, Unix, C
+\end{tightemize}
+\sectionsep
+
+\runsubsection{TEO / Telia}
+\descript{| Solution specialist}
+\location{Apr 2000 - Jul 2003 | Vilnius, Lithuania}
+\begin{tightemize}
+\sectionsep
+\item IPv4 stack based network solutions development for small business
+\item Member of CRM adoption project, responsible for data analytics, measumement of system performance
+\item Technologies used: MSSQL, C++
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Experience before year 2000}
+\descript{| Developer, Network administrator }
+%\location{Apr 2000 - Jul 2003 | Vilnius, Lithuania}
+\begin{tightemize}
+\sectionsep
+\item Development of small ERP on MS Access
+\item Bookkeeping solutions in MS DOS system
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects and other experience}
+
+\runsubsection{Reporting system for state tax inspection}
+\descript{Since 2016| Clojure, ClojureScript, MS SQL}
+\begin{tightemize}
+\item System collects and parses (using monadic parser from Erik Meijer Haskell lectures) receipt data and creates daily sales and tax reports for state tax inspection. Backend - Clojure, Ocaml, frontend - React + ClojureScript.
+\end{tightemize}
+\runsubsection{Coursera MooC}
+\begin{tightemize}
+\item Functional Programming Principles in Scala, Introduction to Data Science, Introduction to Logic (Stanford MooC), Parallel, Concurrent, and Distributed Programming in Java
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2020	     & Finalist & Lorem Ipsum\\
+% 2018	     & $2^{nd}$ & Dolor Sit Amet\\
+% 2015	     & Finalist  & Cras posuere\\
+% \\
+% \end{tabular}
+% \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.25\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\sectionsep
+\location{Experienced:}
+Management of developer team 
+\textbullet{} 
+Clojure \textbullet{} Java \textbullet{} Node.JS \textbullet{} \\ 
+SQL (Postgres, MS SQL) \textbullet{} AWS (Dynamo, SQS, SNS, EC2, ECS) \textbullet{} Terraform \textbullet{} \\
+Git \textbullet{} Linux (long time Gentoo user) \textbullet{} Vim, bash, Docker
+\sectionsep
+\sectionsep
+\location{Familiar:}
+C\#, F\# \textbullet{} ClojureScript \textbullet{}  \\
+\sectionsep
+\sectionsep
+\subsection{Libraries/Frameworks}
+\sectionsep
+Integrant \textbullet{} Reitit \textbullet{} Clojure.spec \textbullet{} Ring \\
+\sectionsep
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\subsection{Vilnius Tech}
+\descript{Master's in Computer Science}
+\location{1996 - 1998 | Vilnius, Lithuania}
+\sectionsep
+\subsection{Vilnius Tech}
+\descript{Bachelor's in Electronics Engineering}
+\location{1992 - 1996 | Vilnius, Lithuania}
+\sectionsep
+
+\section{Other experience} 
+\subsection{Lecturer in Vilnius Tech university}
+\descript{From 2004 to 2022. Subjects teached:}
+\location{Intro to networks, Computer architecture, Secure programming}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Coursework}
+
+% \subsection{Graduate}
+% Graduate Algorithms \textbullet{}\\ 
+% Advanced Computer Architecture \textbullet{}\\ 
+% Operating Systems \textbullet{}\\ 
+% Artificial Intelligence \textbullet{}\\
+% Visualization For Scientific Data \\
+% \sectionsep
+
+% \subsection{Undergraduate}
+
+% Database Management Systems \textbullet{}\\
+% Object Oriented Analysis and Design \textbullet{}\\
+% Artificial Intelligence and Expert Systems \textbullet{}\\
+% Scripting Languages and Web Tech \textbullet{}\\
+% Software Engineering \\
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
+

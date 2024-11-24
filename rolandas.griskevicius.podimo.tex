@@ -1,0 +1,120 @@
+%-------------------------
+% Rover Resume 
+% Link: https://github.com/subidit/rover-resume
+%-------------------------
+
+% This LaTeX file provides various résumé designs.
+% To switch designs, comment/uncomment the corresponding \input line.
+
+\documentclass[11pt]{article}
+
+% \input{sunday.tex}
+\input{templates/week rover/monday.tex}
+% \input{tuesday.tex}
+% \input{wednesday.tex}
+% \input{thursday.tex}
+
+
+\begin{document}
+
+\input{variables.tex}
+
+\begin{center}
+  {\Huge\bfseries $\authorname$ $\authorsurname$} \\ \medskip
+
+  \href{$\authorlinkedin}{\faLinkedin~$\authorlinkedin$} \quad
+  \href{tel:$\authorphone$}{\faPhone~$\authorphone$} \quad
+  \href{mailto:$\authoremail$}{\faEnvelope~$\authoremail$} \quad
+\end{center}
+
+\section{Education}
+%=================%
+\subsection{Vilnius Tech University \aux{Master's in Computer Science} \rside{1998}}
+\subsection{Vilnius Tech University \aux{Bachelor's in Electronics Engineering} \rside{1996}}
+
+
+\section{Experience}
+
+\subsection{Tide Co. Banking platform for SME}
+\subsubsection{Senior Java developer \rside{Sep 2023 - present}}
+\begin{itemize}
+\item Developed various features for core payments platform, mostly related to fraud prevention, deferred payments
+\item Data migration and backfilling of missing data from legacy and other microservices
+\item Other responsibilities: maintaining stability of microservices, 3rd line support
+\item Technologies used: Java 17+, microservices, Spring, Postgres, Datadog, Kubernetes
+\end{itemize}
+
+
+\subsection{Railsbank / Railsr. Embedded finance platform}
+\subsubsection{Technical Team Lead \rside{Nov 2020 - Aug 2023}}
+\begin{itemize}
+
+%===For Clojure CV: ==%
+%	\item Developing Clojure REST services. Responsible for deliveries of team of 4 people. Team responsibilities - Core banking platform, KYC subsystem, webhook delivery service (full service redesign, service extracted from a monolith)
+% \item Technologies used: \textbullet{} Clojure subsystem: Integrant, Reitit, Datomic \textbullet{} IaC : Terraform, AWS SQS, RDS, SNS, Dynamo, Postgres
+\item As part of engineering team, contributed and maintained REST based core banking platform service, KYC and webhook parts mainly. Developed and migrated webhook delivery service (~1M webhooks/day)
+\item Designed a new KYC service, UK market mainly
+\item Other responsibilities: managing deliveries of a small engineering team (4 people).
+\item Technologies used: Java, Clojure, Terraform, AWS SQS, RDS, SNS, Dynamo, Postgres
+\end{itemize}
+
+
+\subsection{Swedbank AB}
+\subsubsection{Senior Developer \rside{Jun 2014 - Nov 2020}}
+\begin{itemize}
+\item Developing REST API backend services in KYC area (Java, Bash)
+\item Integrating third-party services using REST API
+\item Developing test automation frameworks and scripts (Java and Javascript)
+\item Technologies used: Java, Spring, IBM RAD, Javascript / Node.js
+\end{itemize}
+
+\subsection{Circle K / Statoil}
+\subsubsection{IT specialist / Developer \rside{Jul 2003 - Apr 2014}}
+\begin{itemize}
+\item Maintained fuel card system. Enhanced and improved reconcillation features
+\item Developed service station assortment ordering system
+\item Technologies used: C\#, F\#, OCaml, Clojure, MS SQL, Unix, C
+\end{itemize}
+
+\subsection{TEO / Telia}
+\subsubsection{IT Solution specialist \rside{Apr 2000 - Jul 2003}}
+\begin{itemize}
+\item Developed various customized IPv4 based networks for SME
+\item Developed performance measurement system for CRM project
+\item Technologies used: MSSQL, C++
+\end{itemize}
+
+\subsection{Experience before year 2000, companies: Mikrovisata, Labbis UAB}
+\subsubsection{Developer, Network administrator \rside{Apr 2000 - Jul 2003}}
+\begin{itemize}
+\item Developed small custom ERP based on MS Access
+\item Other ERP and bookkeeping solutions development and customization
+\end{itemize}
+
+
+\section{Projects and other experience}
+
+\subsection{Lecturer}
+\subsubsection{Vilnius Tech\rside{2001-2021}}
+\begin{itemize}
+\item Computer architecture, Secure programming
+\end{itemize}
+
+\subsection{Specialized reporting tool for state tax inspection}
+\subsubsection{FE \& BE \rside{Since 2016}}
+\begin{itemize}
+\item System collects and parses (using advanced monadic parser) receipt data and creates daily sales and tax reports for state tax inspection. Backend - Clojure, Ocaml, frontend - React + ClojureScript.
+\end{itemize}
+
+\subsection{Coursera MooC}
+\textbullet{}Functional Programming Principles in Scala
+\textbullet{}Introduction to Data Science
+\textbullet{}Introduction to Logic (Stanford MooC)
+\textbullet{}Parallel, Concurrent, and Distributed Programming in Java
+
+\subsection{Other skills}
+\textbullet{}Linux, bash
+\textbullet{}Arduino
+\textbullet{}Home automation
+
+\end{document}

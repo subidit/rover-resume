@@ -1,0 +1,63 @@
+name: Build LaTeX document
+on: [push]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+
+  example_matrix:
+    strategy:
+      matrix:
+        companies: [main, podimo]
+
+    runs-on:
+      labels: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v3
+
+      - name: Prepare author variables
+        run: |
+          echo '\renewcommand\\authorname{'"${{ vars.AUTHOR_NAME }}"'}' >> variables.tex
+          echo '\renewcommand\\authorname{'"${{ vars.AUTHOR_SURNAME }}"'}' >> variables.tex
+
+
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: |
+            rolandas.griskevicius.${{ matrix.company }}.tex
+          latexmk_use_xelatex: true
+      - name: Upload PDF file
+        uses: actions/upload-artifact@v3
+        with:
+          name: PDF
+          path: ${{ matrix.company }}.pdf
+      - name: Debug0
+        run: |
+          ls -la
+      - name: PrepForDeploy
+        run: |
+          sudo chown runner:docker ${{ matrix.company}}.pdf
+          mkdir cv
+          cp ${{ matrix.company }}.pdf cv/
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+      - name: Debug  
+        run: |
+          ls -la
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'cv'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+
