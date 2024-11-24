@@ -12,18 +12,9 @@ jobs:
     runs-on:
       labels: ubuntu-latest
 
-    strategy:
-      matrix:
-        company:
-          - main
-          - podimo
-
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
-    env:
-      AUTHOR_PHONE: ${{ vars.AUTHOR_PHONE }}
 
     steps:
       - name: Set up Git repository
@@ -34,37 +25,35 @@ jobs:
           echo '\renewcommand\authorphone{'"${{ vars.AUTHOR_PHONE }}"'}' >> variables.tex
           cat variables.tex
 
+      - name: Add fonts
+        run: |
+          wget https://github.com/theleagueof/raleway/releases/download/4.101/Raleway-4.101.zip
+          unzip Raleway-4.101.zip
+          mkdir -p ~/.local/share/fonts
+          cp -r ./Raleway-4.101/static/TTF/* ~/.local/share/fonts/
+          cp -r ./Raleway-4.101/static/TTF/Raleway-SemiBold.ttf ~/.local/share/fonts/Raleway-Semibold.ttf
+          fc-cache -rv
+
       - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v2
+        uses: xu-cheng/latex-action@v3
         with:
           root_file: |
-            ${{ matrix.company }}.tex
-          latexmk_use_xelatex: true
+            podimo.tex
 
-
-      - name: Upload PDF file
-        uses: actions/upload-artifact@v3
-        with:
-          name: PDF
-          path: rolandas.griskevicius.${{ matrix.company }}.pdf
+      - name: PrepForDeploy
+        run: |
+          sudo chown runner:docker podimo.pdf
+          mv podimo.pdf rolandas.griskevicius.podimo.pdf
+          mkdir cv
+          cp rolandas.griskevicius.podimo.pdf cv/
 
       - name: Debug0
         run: |
           ls -la
-
-      - name: PrepForDeploy
-        run: |
-          sudo chown runner:docker ${{ matrix.company}}.pdf
-          mv ${{ matrix.company}}.pdf  rolandas.griskevicius.${{ matrix.company }}.pdf
-          mkdir cv
-          cp rolandas.griskevicius.${{ matrix.company }}.pdf cv/
+          ls -la cv/*
 
       - name: Setup Pages
-        uses: actions/configure-pages@v2
-
-      - name: Debug  
-        run: |
-          ls -la
+        uses: actions/configure-pages@v3
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -73,5 +62,6 @@ jobs:
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
+
 
