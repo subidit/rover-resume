@@ -22,13 +22,16 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
+    env:
+      AUTHOR_PHONE: ${{ vars.AUTHOR_PHONE }}
+
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v3
 
       - name: Prepare author variables
         run: |
-          echo '\renewcommand\\authorphone{'"${{ vars.AUTHOR_PHONE }}"'}' >> variables.tex
+          echo '\renewcommand\authorphone{'"${{ vars.AUTHOR_PHONE }}"'}' >> variables.tex
           cat variables.tex
 
       - name: Compile LaTeX document
