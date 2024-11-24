@@ -35,30 +35,39 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: |
-            rolandas.griskevicius.${{ matrix.company }}.tex
+            ${{ matrix.company }}.tex
           latexmk_use_xelatex: true
+
+
       - name: Upload PDF file
         uses: actions/upload-artifact@v3
         with:
           name: PDF
           path: rolandas.griskevicius.${{ matrix.company }}.pdf
+
       - name: Debug0
         run: |
           ls -la
+
       - name: PrepForDeploy
         run: |
           sudo chown runner:docker ${{ matrix.company}}.pdf
+          mv ${{ matrix.company}}.pdf  rolandas.griskevicius.${{ matrix.company }}.pdf
           mkdir cv
           cp rolandas.griskevicius.${{ matrix.company }}.pdf cv/
+
       - name: Setup Pages
         uses: actions/configure-pages@v2
+
       - name: Debug  
         run: |
           ls -la
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: 'cv'
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
