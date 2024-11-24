@@ -7,13 +7,16 @@ permissions:
 
 jobs:
 
-  example_matrix:
-    strategy:
-      matrix:
-        companies: [main, podimo]
+  build:
 
     runs-on:
       labels: ubuntu-latest
+
+    strategy:
+      matrix:
+        company:
+          - main
+          - podimo
 
     environment:
       name: github-pages
@@ -25,9 +28,8 @@ jobs:
 
       - name: Prepare author variables
         run: |
-          echo '\renewcommand\\authorname{'"${{ vars.AUTHOR_NAME }}"'}' >> variables.tex
-          echo '\renewcommand\\authorname{'"${{ vars.AUTHOR_SURNAME }}"'}' >> variables.tex
-
+          echo '\renewcommand\\authorphone{'"${{ vars.AUTHOR_PHONE }}"'}' >> variables.tex
+          cat variables.tex
 
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
@@ -39,7 +41,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: PDF
-          path: ${{ matrix.company }}.pdf
+          path: rolandas.griskevicius.${{ matrix.company }}.pdf
       - name: Debug0
         run: |
           ls -la
@@ -47,7 +49,7 @@ jobs:
         run: |
           sudo chown runner:docker ${{ matrix.company}}.pdf
           mkdir cv
-          cp ${{ matrix.company }}.pdf cv/
+          cp rolandas.griskevicius.${{ matrix.company }}.pdf cv/
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Debug  
