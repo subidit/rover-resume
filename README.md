@@ -18,9 +18,9 @@ If you have any questions about using this template or formatting your résumé,
 |:----:|:-----:|
 | Base Rover Template | Star Rover Template |
 
-| [![Week Rover](/img/monday.jpg)](/templates/week%20rover/main-rover.tex) | [![Week Rover](/img/tuesday.jpg)](/templates/week%20rover/main-rover.tex) | 
+| [![Week Rover](/img/monday.jpg)](/templates/week%20rover/main-rover.tex) | [![Week Rover](/img/office-rover.jpg)](/templates/office%20rover/office-rover.tex) | 
 |:----:|:-----:|
-| Monday - Week Rover | Tuesday - Week Rover |
+| Monday - Week Rover | Office Rover |
 
 | [![Milky Rover](/img/milky-rover.jpg)](/templates/milky%20rover/) | [![Fancy Rover](/img/fancy-rover.jpg)](/templates/fancy%20rover/) | 
 |:----:|:-----:|
