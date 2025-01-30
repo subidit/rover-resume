@@ -5,12 +5,24 @@
   </picture>
 </div>
 
-This repository has several simple yet effective résumé template using basic LaTeX commands. The BASE ROVER template requires only about 10 lines of code to set up a clean and minimal résumé format. For your résumé, there's no need for any custom résumé class, which requires you to learn new commands and options. These templates leverage the full power and flexibility of LaTeX, allowing you to customize every aspect without the constraints of predefined classes. All templates use `article` class and preinstalled fonts only.
+This repository offers a collection of simple yet effective résumé templates built using basic LaTeX commands. The BASE ROVER template, for instance, requires only about 10 lines of code to set up a clean and minimal résumé format. Unlike other templates that rely on custom résumé classes — forcing you to learn new commands and options — these templates are designed to be straightforward and easy to use.
 
-These templates are designed with ATS (Applicant Tracking System) compatibility in mind, featuring single-column layouts that ensure your résumé is easily parsed. By using standard LaTeX commands, they maintain a clear and organized structure, making it simple for both ATS software and recruiters to quickly identify key details.
 
-If you have any questions about using this template or formatting your résumé, feel free to post them in the [Discussions](https://github.com/subidit/rover-resume/discussions) section. 
+## Motivation
 
+Creating a one-page résumé shouldn't require 500+ lines of code filled with custom commands that are difficult to modify or troubleshoot. Frustrated by the complexity and lack of simplicity in existing templates, I set out to design a clean and intuitive solution. This template is built with basic design principles in mind like *Hierarchy*, *Repetition*, and *Alignment* to ensure a professional and visually appealing result without unnecessary complexity. 
+
+The following code block serves as the foundational structure for each entry in your résumé.
+
+```latex
+\subsection{Designation, Duration}
+\subsubsection{Company, Location}
+\begin{itemize}
+  \item Bullet points  
+  \item tailored to the
+  \item job description.
+\end{itemize}
+```
 
 ## Screenshots
 
