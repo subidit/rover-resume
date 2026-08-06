@@ -102,14 +102,13 @@ Happy job hunting!
 
 ## Star History
 
-<a href="https://www.star-history.com/?repos=subidit%2Frover-resume&type=date&logscale=&legend=top-left">
+<a href="https://www.star-history.com/?repos=subidit%2Frover-resume&type=date&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=subidit/rover-resume&type=date&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=subidit/rover-resume&type=date&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=subidit/rover-resume&type=date&legend=top-left" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=subidit/rover-resume&type=date&theme=dark&legend=top-left&sealed_token=IFkifZ44T5w1R2ew3tTfNvJ68OPst09DQHVFKm5YjmOZCtpqM22qjKaHcdbqOH_9MWNBAj1g_teZzlB4nCr1nbekV0Xn4sT7zEhovnmgnkHbVVZQ6eSunV6IQqVrCe-6Q9Az3A8lpBxiUbupQToKk3ASpOWR6lWdlirbjLzYUkbM81Xf5USRVtbcJJHZ" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=subidit/rover-resume&type=date&legend=top-left&sealed_token=IFkifZ44T5w1R2ew3tTfNvJ68OPst09DQHVFKm5YjmOZCtpqM22qjKaHcdbqOH_9MWNBAj1g_teZzlB4nCr1nbekV0Xn4sT7zEhovnmgnkHbVVZQ6eSunV6IQqVrCe-6Q9Az3A8lpBxiUbupQToKk3ASpOWR6lWdlirbjLzYUkbM81Xf5USRVtbcJJHZ" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=subidit/rover-resume&type=date&legend=top-left&sealed_token=IFkifZ44T5w1R2ew3tTfNvJ68OPst09DQHVFKm5YjmOZCtpqM22qjKaHcdbqOH_9MWNBAj1g_teZzlB4nCr1nbekV0Xn4sT7zEhovnmgnkHbVVZQ6eSunV6IQqVrCe-6Q9Az3A8lpBxiUbupQToKk3ASpOWR6lWdlirbjLzYUkbM81Xf5USRVtbcJJHZ" />
  </picture>
 </a>
-
 
 ## License
 
