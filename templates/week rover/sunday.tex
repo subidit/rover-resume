@@ -1,7 +1,7 @@
-%-------------------------
+%----------------------------------------------
 % Rover Resume 
 % Link: https://github.com/subidit/rover-resume
-%-------------------------
+%----------------------------------------------
 
 \usepackage[margin=1in,a4paper]{geometry}
 
@@ -19,8 +19,9 @@
 \titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule \global\RemVStrue]
 \titleformat{\subsection}{\large\bfseries}{}{}{\rvs}
 \titleformat*{\subsubsection}{\large\itshape}
+\pdfgentounicode=1
 
-\newif\ifRemVS % remove vspace between \section & \subsection
+\newif\ifRemVS % Remove vspace between \section & \subsection
 \newcommand{\rvs}{
   \ifRemVS
     \vspace{-1ex}
