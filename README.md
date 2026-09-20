@@ -113,3 +113,8 @@ Happy job hunting!
 ## License
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><br><a property="dct:title" rel="cc:attributionURL" href="https://github.com/subidit/rover-resume">Rover Resume</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/subidit/">Subidit</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0</a></p>
+
+## 🔗 相关工具 / Related tools
+
+- [简历大师 Resume Master](https://markmiller1.github.io/resume-master/) — 免费、纯前端、隐私优先的在线简历生成器，8 套模板 + ATS 检测 + 64 页求职指南，数据不出本机
+- [awesome-resume-cn](https://github.com/markmiller1/awesome-resume-cn) — 中文免费简历资源精选清单（工具 / 模板 / 写作指南）
